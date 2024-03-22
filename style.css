@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+*{
+     padding: 0;
+     margin: 0;
+     box-sizing: border-box;
+}
+body{
+     font-family: "Inter", sans-serif;
+     font-size: 16px;
+     scroll-behavior: smooth;
+     color: #999999;
+     background: #1f1f1f;
+     line-height: 1.7;
+     overflow-x: hidden;
+     height: 100vh;
+}
+aside .card {
+     width: fit-content;
+     height: fit-content;
+     background-color: transparent;
+     display: flex;
+     flex-direction: row;
+     align-items: center;
+     justify-content: center;
+     border: none;
+     gap: 20px;
+   }
+   /* for all social containers*/
+aside .socialContainer {
+     width: 52px;
+     height: 52px;
+     background-color: rgb(44, 44, 44);
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     overflow: hidden;
+     transition-duration: .3s;
+   }
+   /* instagram*/
+aside .containerOne:hover {
+     background-color: #d62976;
+     transition-duration: .3s;
+   }
+   /* twitter*/
+aside   .containerTwo:hover {
+     background-color: #00acee;
+     transition-duration: .3s;
+   }
+   /* linkdin*/
+aside .containerThree:hover {
+     background-color: #0072b1;
+     transition-duration: .3s;
+   }
+   /* Whatsapp*/
+aside   .containerFour:hover {
+     background-color: #128C7E;
+     transition-duration: .3s;
+   }
+   
+aside  .socialContainer:active {
+     transform: scale(0.9);
+     transition-duration: .3s;
+   }
+   
+aside  .socialSvg {
+     width: 17px;
+   }
+   
+aside  .socialSvg path {
+     fill: rgb(255, 255, 255);
+   }
+   
+aside .socialContainer:hover aside .socialSvg {
+     animation: slide-in-top 0.3s both;
+   }
+   
+@keyframes slide-in-top {
+     0% {
+          transform: translateY(-50px);
+          opacity: 0;
+     }
+
+     100% {
+          transform: translateY(0);
+          opacity: 1;
+     }
+}
