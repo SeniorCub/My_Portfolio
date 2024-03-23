@@ -3,6 +3,7 @@
      padding: 0;
      margin: 0;
      box-sizing: border-box;
+     /* #e82e19 */
 }
 body{
      font-family: "Inter", sans-serif;
@@ -14,6 +15,76 @@ body{
      overflow-x: hidden;
      height: 100vh;
 }
+img{
+     width: 100%;
+     height: 100%;
+     object-fit: cover;
+}
+aside{
+     display: flex;
+     flex-direction: column;
+     justify-content: space-between;
+     align-items: center;
+     position: fixed;
+     left: 2vh;
+     height: 100vh;
+     border-radius: 30px;
+     border: 1px solid #565656;
+     top: 50%;
+     transform: translateY(-50%);
+     padding: 10px 30px;
+     .head{
+          gap: 100px;
+          .myName{
+               text-align: left;
+               color: #fff;
+               font-size: 25px;
+               font-weight: 900;
+          }
+          .myRole{
+               text-align: right;
+               color: #fff;
+               font-size: 15px;
+               font-weight: 400;
+          }
+     }
+     .profileImg{
+          width: 80%;
+          height: 30vh;
+          margin-left: auto;
+          margin-right: auto;
+          img{
+               border-radius: 30px;
+          }
+     }
+     .profilInfo{
+          font-size: 25px;
+          color: #fff;
+          text-align: center;
+          font-weight: 300;
+     }
+     .copyright{
+          font-size: 14px;
+          text-align: center;
+     }
+     .hire{
+          text-align: center;
+          padding: 11px 58px 10px 58px;
+          width: 70%;
+          border-radius: 30px;
+          text-transform: uppercase;
+          border: none;
+          outline: none;
+          color: #fff;
+          transition: .3s;
+          background-color: #e82e19;
+     }
+     .hire:hover{
+          background-color: transparent;
+          color: #e82e19;
+          border: 1px solid #e82e19;
+     }
+}
 aside .card {
      width: fit-content;
      height: fit-content;
@@ -24,56 +95,39 @@ aside .card {
      justify-content: center;
      border: none;
      gap: 20px;
-   }
-   /* for all social containers*/
-aside .socialContainer {
-     width: 52px;
-     height: 52px;
-     background-color: rgb(44, 44, 44);
-     display: flex;
-     align-items: center;
-     justify-content: center;
-     overflow: hidden;
+     .socialContainer {
+          width: 52px;
+          height: 52px;
+          border-radius: 50%;
+          border: 2px solid #2c2c2c;
+          background-color: transparent;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          overflow: hidden;
+          transition-duration: .3s;
+     }
+   .socialContainer:hover {
+     border: 2px solid #e82e19;
      transition-duration: .3s;
+     .socialSvg path {
+          fill: #e82e19;
+        }
    }
-   /* instagram*/
-aside .containerOne:hover {
-     background-color: #d62976;
-     transition-duration: .3s;
-   }
-   /* twitter*/
-aside   .containerTwo:hover {
-     background-color: #00acee;
-     transition-duration: .3s;
-   }
-   /* linkdin*/
-aside .containerThree:hover {
-     background-color: #0072b1;
-     transition-duration: .3s;
-   }
-   /* Whatsapp*/
-aside   .containerFour:hover {
-     background-color: #128C7E;
-     transition-duration: .3s;
-   }
-   
-aside  .socialContainer:active {
+   .socialContainer:active {
      transform: scale(0.9);
      transition-duration: .3s;
    }
-   
-aside  .socialSvg {
+    .socialSvg {
      width: 17px;
    }
-   
-aside  .socialSvg path {
-     fill: rgb(255, 255, 255);
+   .socialSvg path {
+     fill: #565656;
    }
-   
-aside .socialContainer:hover aside .socialSvg {
+   .socialContainer:hover .socialSvg {
      animation: slide-in-top 0.3s both;
    }
-   
+}
 @keyframes slide-in-top {
      0% {
           transform: translateY(-50px);
