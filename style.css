@@ -20,7 +20,7 @@ img{
      height: 100%;
      object-fit: cover;
 }
-aside{
+.leftSide{
      display: flex;
      flex-direction: column;
      justify-content: space-between;
@@ -28,13 +28,14 @@ aside{
      position: fixed;
      left: 2vh;
      height: 100vh;
+     width: 25vw;
      border-radius: 30px;
      border: 1px solid #565656;
      top: 50%;
      transform: translateY(-50%);
      padding: 10px 30px;
      .head{
-          gap: 100px;
+          gap: 50px;
           .myName{
                text-align: left;
                color: #fff;
@@ -69,7 +70,7 @@ aside{
      }
      .hire{
           text-align: center;
-          padding: 11px 58px 10px 58px;
+          padding: 10px 20px;
           width: 70%;
           border-radius: 30px;
           text-transform: uppercase;
@@ -77,6 +78,7 @@ aside{
           outline: none;
           color: #fff;
           transition: .3s;
+          font-size: 15px;
           background-color: #e82e19;
      }
      .hire:hover{
@@ -85,7 +87,7 @@ aside{
           border: 1px solid #e82e19;
      }
 }
-aside .card {
+.leftSide .card {
      width: fit-content;
      height: fit-content;
      background-color: transparent;
@@ -138,4 +140,49 @@ aside .card {
           transform: translateY(0);
           opacity: 1;
      }
+}
+.setbutton{
+     cursor: pointer;
+     position: absolute;
+     top: 10vh;
+     border: none;
+     background-color: #1f1f1f;
+     padding: 10px;
+     color: #565656;
+     i{
+          animation: spin 3s linear infinite;
+     }
+}
+@keyframes spin {
+     0% {
+          transform: rotate(0deg);
+     }
+     100% {
+          transform: rotate(360deg);
+     }
+}
+#navbar-example2{
+     border: 1px solid #575757;
+     border-radius: 30px;
+     right: 5vh;
+     gap: 10px;
+     padding: 24px 10px;
+     background: #1f1f1f;
+     z-index: 20;
+     bottom: 20%;
+}
+.nav-item .active{
+     color: #e82e19;
+}
+.nav-item:hover{
+     color: #e82e19;
+}
+.contents{
+     float: right;
+     margin-right: 5vh;
+     margin-top: 10vh;
+}
+.offcanvas{
+     background-color: #1f1f1f;
+     color: #575757;
 }
