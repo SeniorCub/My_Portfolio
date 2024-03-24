@@ -63,7 +63,7 @@
           <a class="hire btn" href="#"><i class="fa-regular fa-envelope"></i>  Hire Me!</a>
      </aside>
 
-     <button class="setbutton">
+     <button class="setbutton"  data-bs-toggle="offcanvas" href="#offcanvasExample1" role="button" aria-controls="offcanvasExample1">
         <i class="fa fa-gear"></i>
      </button>
         
@@ -99,9 +99,24 @@
                <i class="fa fa-bars"></i>
           </a>
             
-          
+          <!-- Introduction -->
+          <div class="introduction">
+               <div class="introHead justify-content-center align-items-center p-1 text-uppercase d-flex gap-2"><i class="fa fa-home"></i> Introduce</div>
+
+               <div class="introBody">Say Hi from <span>SeniorCub</span>,<div id="typing-text"></div></div>
+          </div>
      </section>
 
+     <!-- Settings OffCanvas -->
+     <div class="offcanvas offcanvas-end text-center" tabindex="-1" id="offcanvasExample1" aria-labelledby="offcanvasExampleLabel">
+          <div class="offcanvas-header  d-flex justify-content-center">
+               <h5 class="offcanvas-title text-center" id="offcanvasExampleLabel">Settings</h5>
+          </div>
+          <div class="offcanvas-body d-flex flex-column mx-auto gap-5">
+              
+          </div>
+     </div>
+     <!-- Menu OffCanvas -->
      <div class="offcanvas offcanvas-end text-center" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
           <div class="offcanvas-header  d-flex justify-content-center">
                <h5 class="offcanvas-title text-center" id="offcanvasExampleLabel">Menu</h5>
@@ -165,5 +180,6 @@
      <link rel="stylesheet" href="aos-master/src/js/aos.js">
      <!-- Bootstrap Js -->
      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+     <script src="script.js"></script>
 </body>
 </html>
