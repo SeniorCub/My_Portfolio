@@ -182,7 +182,72 @@ img{
      margin-right: 5vh;
      margin-top: 10vh;
 }
+.btnMenu{
+     border: 1px solid #575757;
+     border-radius: 50%;
+     color: #fff;
+     padding: 10px 15px;
+}
+.btnMenu:hover{
+     border: #e82e19 1px solid;
+     color: #e82e19;
+}
 .offcanvas{
      background-color: #1f1f1f;
      color: #575757;
+}
+.offcanvas-body{
+     .nav-item{
+          cursor: pointer;
+     }
+     .active{
+          color: #fff;
+          i{
+               color: #e82e19;
+          }
+     }
+     .nav-item:hover{
+          color: #fff;
+          i{
+               color: #e82e19;
+          }
+     }
+     .card {
+          width: fit-content;
+          height: fit-content;
+          background-color: transparent;
+          display: flex;
+          flex-direction: row;
+          align-items: center;
+          justify-content: center;
+          border: none;
+          gap: 20px;
+          .socialContainer {
+               background-color: transparent;
+               display: flex;
+               align-items: center;
+               justify-content: center;
+               overflow: hidden;
+               transition-duration: .3s;
+          }
+        .socialContainer:hover {
+          transition-duration: .3s;
+          .socialSvg path {
+               fill: #e82e19;
+             }
+        }
+        .socialContainer:active {
+          transform: scale(0.9);
+          transition-duration: .3s;
+        }
+         .socialSvg {
+          width: 17px;
+        }
+        .socialSvg path {
+          fill: #565656;
+        }
+        .socialContainer:hover .socialSvg {
+          animation: slide-in-top 0.3s both;
+        }
+     }
 }
