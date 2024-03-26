@@ -30,29 +30,21 @@ li{
      display: flex;
      flex-direction: column;
      justify-content: space-between;
-     align-items: center;
      position: fixed;
      left: 2vh;
      height: 100vh;
      width: 25vw;
-     border-radius: 30px;
      border: 1px solid #565656;
      top: 50%;
      transform: translateY(-50%);
      padding: 10px 30px;
      .head{
-          gap: 50px;
+          justify-content: left;
           .myName{
                text-align: left;
                color: #fff;
                font-size: 25px;
                font-weight: 900;
-          }
-          .myRole{
-               text-align: right;
-               color: #fff;
-               font-size: 15px;
-               font-weight: 400;
           }
      }
      .profileImg{
@@ -60,9 +52,6 @@ li{
           height: 30vh;
           margin-left: auto;
           margin-right: auto;
-          img{
-               border-radius: 30px;
-          }
      }
      .profilInfo{
           font-size: 25px;
@@ -78,9 +67,10 @@ li{
           text-align: center;
           padding: 10px 20px;
           width: 70%;
-          border-radius: 30px;
+
           text-transform: uppercase;
           border: none;
+          margin: 0 auto;
           outline: none;
           color: #fff;
           transition: .3s;
@@ -93,7 +83,7 @@ li{
           border: 1px solid #e82e19;
      }
 }
-.leftSide .card {
+.card {
      width: fit-content;
      height: fit-content;
      background-color: transparent;
@@ -106,7 +96,6 @@ li{
      .socialContainer {
           width: 52px;
           height: 52px;
-          border-radius: 50%;
           border: 2px solid #2c2c2c;
           background-color: transparent;
           display: flex;
@@ -157,7 +146,6 @@ li{
 }
 #navbar-example2{
      border: 1px solid #565656;
-     border-radius: 30px;
      right: 5vh;
      gap: 10px;
      padding: 24px 10px;
@@ -165,15 +153,9 @@ li{
      z-index: 20;
      bottom: 20%;
 }
-.nav-item .active{
-     color: #e82e19;
-}
-.nav-item:hover{
-     color: #e82e19;
-}
 .contents{
      margin-right: 5vh;
-     margin-top: 10vh;
+     margin-top: 20vh;
      margin-left: 30vw;
      section{
           padding-right: 30px;
@@ -181,8 +163,8 @@ li{
 }
 .btnMenu{
      float: right;
+     margin-right: 20px;
      border: 1px solid #565656;
-     border-radius: 50%;
      color: #fff;
      padding: 10px 15px;
 }
@@ -258,7 +240,7 @@ li{
           font-weight: 300;
           border: 1px solid #565656;
           padding: 5px 15px!important;
-          border-radius: 30px;
+
           margin-bottom: 53px;
      }
      .introBody{
@@ -289,7 +271,7 @@ li{
           font-size: 16px;
           color: #999999;
           width: 70%;
-          margin-top: 53px;
+          margin-top: 10px;
      }
 }
 /* Go to Project Rotating Button */
@@ -299,9 +281,7 @@ li{
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-left: auto;
-    border-radius: 50%;
-    border: 1px solid #575757;
+    margin-left: auto;    border: 1px solid #575757;
     position: relative;
     overflow: hidden;
     margin-right: 15px;
@@ -404,7 +384,6 @@ li{
           width: 12px;
           height: 12px;
           background: #656565;
-          border-radius: 50%;
           left: -6px;
           top: 7px;
           transition: .3s;
@@ -419,7 +398,6 @@ li{
           width: 12px;
           height: 12px;
           background: #656565;
-          border-radius: 50%;
           left: -6px;
           top: 7px;
           transition: .3s;
@@ -434,7 +412,6 @@ li{
           width: 12px;
           height: 12px;
           background: #656565;
-          border-radius: 50%;
           left: -6px;
           top: 7px;
           transition: .3s;
@@ -446,7 +423,6 @@ li{
 /* Services */
 .services-items .service-item {
      border: 1px solid #565656;
-     border-radius: 20px;
      transition: .3s;
      position: relative;
      padding: 44px 48px 41px 48px;
@@ -504,8 +480,7 @@ li{
 }
 .skills .skill .skill-inner {
      border: 2px solid #565656;
-     border-radius: 85px;
-     padding: 54px 0 48px 0;
+     padding: 30px 0;
      margin-bottom: 20px;
      transition: .3s;
      h2 {
@@ -541,7 +516,6 @@ li{
  .portfolio-items .portfolio-item .portfolio-item-inner {
      height: 370px;
      overflow: hidden;
-     border-radius: 30px;
      position: relative;
      margin-bottom: 30px;
  }
@@ -569,7 +543,6 @@ li{
      background: #fff;
      color: #000;
      padding: 7px 20px;
-     border-radius: 19px;
      transition: .3s;
  }
  .portfolio-items .portfolio-item:hover .portfolio-item-inner .portfolio-categories li a {
@@ -602,15 +575,14 @@ swiper-container {
           flex-direction: column;
           gap: 50px;
           padding: 15px;
-          border-radius: 18px;
+
           color: #fff;
           background: #161616;
           border: #e82e19 1px solid;
           .imagg{
                width: 60px;
                height: 60px;
-               border-radius: 50%;
-          }
+               }
           .text{
                color: #fff;
                font-size: 18px;
@@ -622,11 +594,9 @@ swiper-container {
 .contactForm{
      background-color: #161616;
      padding: 30px;
-     border-radius: 20px;
      input{
           background-color: #2c2c2c;
           outline: 2px solid #2c2c2c;
-          border-radius: 6px;
           height: 55px;
           padding: 0 15px;
           font-size: 14px;
@@ -645,7 +615,6 @@ swiper-container {
      textarea{
           max-height: 220px;
           background-color: #2c2c2c;
-          border-radius: 6px;
           padding: 0;
           outline: 2px solid #2c2c2c;
           padding: 10px 15px;
@@ -657,7 +626,6 @@ swiper-container {
           resize: none;
      }
      button{
-          border-radius: 6px;
           background: linear-gradient(145deg, #1f1f1f, #1e1e1e);
           font-size: 17px;
           text-transform: uppercase;
