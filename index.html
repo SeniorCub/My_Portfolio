@@ -14,12 +14,16 @@
      <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
      <!-- Normal CSS -->
      <link rel="stylesheet" href="style.css">
+     <link rel="stylesheet" href="responsive.css">
 </head>
 <body>
 
      <!-- SideBar for Personal Info -->
      <aside class="leftSide">
           <div class="d-flex head">
+               <a class="btn btnMenu2" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button" aria-controls="offcanvasExample">
+                    <i class="fa fa-bars"></i>
+               </a>
                <div class="myName">SeniorCub</div>
           </div>
 
@@ -27,11 +31,10 @@
 
           <div class="profilInfo d-flex flex-column">
                <div class="fullName">Farinde Reuben</div>
-               <div class="email">farinderif@gmail.com</div>
-               <div class="basedIn">Based in Ibadan, Nigeria</div>
+               <div id="typing-texts"></div>
           </div>
          
-          <a class="hire btn" href="#"><i class="fa-regular fa-envelope"></i>  Hire Me!</a>
+          <a class="hire btn" href="#contact"><i class="fa-regular fa-envelope"></i>  Hire Me!</a>
 
           <div class="copyright">
                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-copyright" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
@@ -71,6 +74,9 @@
                </a>
           </div>
      </nav>
+
+     
+       
 
      <section class="contents">
           <a class="btn btnMenu" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button" aria-controls="offcanvasExample">
@@ -379,6 +385,19 @@
                </div>
           </section>
 
+          <!-- Footer -->
+          <footer class="row justify-content-center" id="footer">
+              <div class=" row miniOne col-6">
+                    <div class="col-12 haed">Email</div>
+                    <a class="profileEmail col-5">farinderif@gmail.com</a>
+                    <a class="profileEmail col-5">blinkgraphics05@gmail.com</a>
+              </div>
+              <div class=" row miniTwo col-6">
+                    <div class="col-12 haed">Phone Number</div>
+                    <a class="profileEmail col-5">+234 813 440 7001</a>
+                    <a class="profileEmail col-5">+234 708 408 1546</a>
+              </div>
+          </footer>
      </section>
 
      <!-- Menu OffCanvas -->

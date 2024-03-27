@@ -8,7 +8,6 @@
 body{
      font-family: "Inter", sans-serif;
      font-size: 16px;
-     scroll-behavior: smooth;
      color: #999999;
      background: #1f1f1f;
      line-height: 1.7;
@@ -26,6 +25,9 @@ img{
 li{
      list-style: none;
 }
+a{
+     text-decoration: none;
+}
 .leftSide{
      display: flex;
      flex-direction: column;
@@ -42,7 +44,7 @@ li{
           justify-content: left;
           .myName{
                text-align: left;
-               color: #fff;
+               color: #d3d3d3;
                font-size: 25px;
                font-weight: 900;
           }
@@ -54,10 +56,10 @@ li{
           margin-right: auto;
      }
      .profilInfo{
-          font-size: 25px;
+          font-size: 30px;
           color: #fff;
           text-align: center;
-          font-weight: 300;
+          font-weight: 900;
      }
      .copyright{
           font-size: 14px;
@@ -81,6 +83,11 @@ li{
           background-color: transparent;
           color: #e82e19;
           border: 1px solid #e82e19;
+     }
+     #typing-texts{
+          color: #999999;
+          font-weight: 600;
+          height: 100px;
      }
 }
 .card {
@@ -271,7 +278,6 @@ li{
           font-size: 16px;
           color: #999999;
           width: 70%;
-          margin-top: 10px;
      }
 }
 /* Go to Project Rotating Button */
@@ -591,6 +597,7 @@ swiper-container {
           }
      }
 }
+/* Contact */
 .contactForm{
      background-color: #161616;
      padding: 30px;
@@ -645,4 +652,25 @@ textarea::-webkit-scrollbar{
 }
 .contactForm button:hover{
      box-shadow: 10px 10px 19px #2c2c2c, -10px -10px 19px #161616;
+}
+/* Footer */
+#footer{
+     border-top: #999999 1px solid;
+     padding-top: 20px;
+     margin-top: 50px;
+     .haed{
+          font-size: 14px;
+          color: #999999;
+          font-weight: 600;
+          letter-spacing: 1.5px;
+          word-spacing: 3px;
+          margin-bottom: 10px;
+     }
+     .profileEmail{
+          font-size: 14px;
+          color: #fff;
+          font-weight: 400;
+          margin-bottom: 10px;
+          cursor: pointer;
+     }
 }
