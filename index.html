@@ -24,7 +24,7 @@
                <a class="btn btnMenu2" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button" aria-controls="offcanvasExample">
                     <i class="fa fa-bars"></i>
                </a>
-               <div class="myName">SeniorCub</div>
+               <div class="myName"><span class="logo">&lt;</span>SeniorCub<span class="logo">/&gt;</span></div>
           </div>
 
           <div class="profileImg"><img src="images/profile.jpeg" alt=""></div>
@@ -37,11 +37,11 @@
           <a class="hire btn" href="#contact"><i class="fa-regular fa-envelope"></i>  Hire Me!</a>
 
           <div class="copyright">
-               <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-copyright" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
-               <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
-               <path d="M12 12m-9 0a9 9 0 1 0 18 0a9 9 0 1 0 -18 0" />
-               <path d="M14 9.75a3.016 3.016 0 0 0 -4.163 .173a2.993 2.993 0 0 0 0 4.154a3.016 3.016 0 0 0 4.163 .173" />
-             </svg> 2024 Drake. All Rights Reserved
+               <script>
+                    var today = new Date()
+                    var year = today.getFullYear()
+                    document.write(year)
+               </script> © All Rights Reserved
           </div>
              
      </aside>
@@ -79,6 +79,15 @@
        
 
      <section class="contents">
+          <!-- Date and Time -->
+          <span class="available-link available-link-wrap time common-box"><i class="fa fa-clock"></i><span id="datetime">Sunday, March 31, 2024</span></span>
+
+          <!-- Available for Freelance -->
+          <div class="available-link-wrap">
+               <a target="_blank" href="#" class="available-link common-box"><span class="online-dot"></span>Available for freelance work</a>
+          </div>
+
+          <!-- Menu Button -->
           <a class="btn btnMenu" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button" aria-controls="offcanvasExample">
                <i class="fa fa-bars"></i>
           </a>
@@ -113,14 +122,40 @@
           <!-- About Me -->
           <section class="introduction about" id="about">
                <div class="introHead justify-content-center align-items-center p-1 text-uppercase d-flex gap-2" data-aos="fade-up" data-aos-duration="900"><i class="fa fa-user"></i> About</div>
-               <div class="aboutHead"  data-aos="fade-up" data-aos-duration="900">Every great design begin with an even <span>better story</span></div>
-               <div class="introCatch"  data-aos="fade-up" data-aos-duration="900">Since beginning my journey as a freelance designer nearly 8 years ago, I've done remote work for agencies, consulted for startups, and collaborated with talented people to create digital products for both business and consumer use. I'm quietly confident, naturally curious, and perpetually working on improving my chopsone design problem at a time.</div>
+               <div class="row">
+                    <div class="col-4 about-image-wrap position-relative">
+                         <div class="about-bg position-absolute" style="transition: all 1s ease-out 0.3s;"></div>
+                         <img alt="Ashwin" class="about-image position-absolute" src="https://ashwinthomas.in/assets/images/ashwin_large.webp" style="transition: all 1s ease-out 0s;">
+                    </div>
+
+                    <div class="ms-5 col-6">
+                         <div class="aboutHead" data-aos="fade-up" data-aos-duration="900">I <span>am,</span></div>
+                         <div class="profileStory">
+                              <div class="storyGan">
+                                   Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis aliquid iure fugiat, saepe nam repellendus dicta harum vero eaque excepturi esse doloribus nihil possimus sint non, dolores eum. Mollitia corrupti quod dicta? At unde temporibus quisquam nulla, consequuntur repellat ea. Quis veritatis repellat quasi ipsum repudiandae dolores magnam dolorem eaque!
+                              </div>
+                              <div class="StoryInfo">
+                                   <div class="row mb-3 sec">
+                                        <div class="col-6 d-flex gap-2 info1">Name: <span>Farinde Reuben</span></div>
+                                        <div class="col-6 d-flex gap-2 info1">Address: <span>Ibadan, Oyo State, Nigeria</span></div>
+                                   </div>
+                                  <div class="row sec">
+                                        <div class="col-7 d-flex gap-2 info1">Phone: <div class="d-flex flex-column div"><span>+234 813 4407 001</span><span>+234 708 4081 546</span></div></div>
+                                        <div class="col-5 d-flex flex-column gap-2 info1">Email: <div class="d-flex flex-column div"><span>farinderif@gmail.com</span></div><span>blinkgraphics05@gmail.com</span></div>
+                                  </div>
+                              </div>
+                         </div>
+                         <button>
+                             Download CV <i class="fas fa-download"></i>
+                         </button>
+                    </div>
+               </div>
           </section>
 
           <!-- Resume -->
           <section class="introduction about resume" id="resume">
                <div class="introHead justify-content-center align-items-center p-1 text-uppercase d-flex gap-2" data-aos="fade-up" data-aos-duration="900"><i class="fa fa-briefcase"></i> Resume</div>
-               <div class="aboutHead" data-aos="fade-up" data-aos-duration="900">Education &<span> Experience</span></div>
+               <div class="aboutHead" data-aos="fade-up" data-aos-duration="900"><span>Education</span> & Experience</div>
                <div class="resume-timeline">
                     <div class="item" data-aos="fade-down-left" data-aos-duration="500">
                          <span class="date">2021 - Present</span>
@@ -137,6 +172,57 @@
                          <p>Freelance</p>
                          <h3>Leader Team of Marketing</h3>
                          <p>AHA Marketing Agency</p>
+                    </div>
+               </div>
+               <div class="mt-5 aboutHead pt-5" data-aos="fade-up" data-aos-duration="900">My<span> Experience</span></div>
+               <div class="container-fluid p-0 resume-lines">
+                    <!-- experience single item -->
+                    <div class="row g-0 resume-lines__item">
+                         <div class="col-12 col-md-2">
+                              <span class="resume-lines__date">2018 - 2019</span>
+                         </div>
+                         <div class="col-12 col-md-5">
+                              <h5 class="resume-lines__title">Illustrator</h5>
+                              <p class="resume-lines__source">in the 
+                                   <a href="#0" class="text-link-bold" target="_blank">Creative Mind</a>
+                                   agency
+                              </p>
+                         </div>
+                         <div class="col-12 col-md-5">
+                              <p class="small resume-lines__descr">I created original images for a range of digital and printed products.</p>
+                         </div>
+                    </div>
+                    <!-- experience single item -->
+                    <div class="row g-0 resume-lines__item">
+                         <div class="col-12 col-md-2">
+                              <span class="resume-lines__date">2018 - 2019</span>
+                         </div>
+                         <div class="col-12 col-md-5">
+                              <h5 class="resume-lines__title">Illustrator</h5>
+                              <p class="resume-lines__source">in the 
+                                   <a href="#0" class="text-link-bold" target="_blank">Creative Mind</a>
+                                   agency
+                              </p>
+                         </div>
+                         <div class="col-12 col-md-5">
+                              <p class="small resume-lines__descr">I created original images for a range of digital and printed products.</p>
+                         </div>
+                    </div>
+                    <!-- experience single item -->
+                    <div class="row g-0 resume-lines__item">
+                         <div class="col-12 col-md-2">
+                              <span class="resume-lines__date">2018 - 2019</span>
+                         </div>
+                         <div class="col-12 col-md-5">
+                              <h5 class="resume-lines__title">Illustrator</h5>
+                              <p class="resume-lines__source">in the 
+                                   <a href="#0" class="text-link-bold" target="_blank">Creative Mind</a>
+                                   agency
+                              </p>
+                         </div>
+                         <div class="col-12 col-md-5">
+                              <p class="small resume-lines__descr">I created original images for a range of digital and printed products.</p>
+                         </div>
                     </div>
                </div>
           </section>
@@ -175,49 +261,49 @@
                     <div class="col-md-3" data-aos="fade-down-right" data-aos-duration="900">
                          <div class="skill">
                               <div class="skill-inner">
-                                   <img decoding="async" src="https://wpriverthemes.com/drake/wp-content/uploads/2023/03/figma.png" alt="">
+                                   <i class="fab fa-html5"></i>
                               </div>
-                              <p class="name">Figma</p>
+                              <p class="name">HTML</p>
                          </div>
                     </div>
                     <div class="col-md-3" data-aos="fade-up" data-aos-duration="900">
                          <div class="skill">
                               <div class="skill-inner">
-                                   <img decoding="async" src="https://wpriverthemes.com/drake/wp-content/uploads/2023/03/framer.png" alt="">
+                                   <i class="fab fa-css3"></i>
                               </div>
-                              <p class="name">Framer</p>
+                              <p class="name">CSS</p>
                          </div>
                     </div>
-                    <div class="col-md-3" >
-                    <div class="skill">
-                         <div class="skill-inner">
-                              <img decoding="async" src="https://wpriverthemes.com/drake/wp-content/uploads/2023/03/webflow.png" alt="">
-                         </div>
-                              <p class="name">Webflow</p>
-                         </div>
-                    </div>
-                    <div class="col-md-3" >
+                    <div class="col-md-3" data-aos="fade-down-left" data-aos-duration="900">
                          <div class="skill">
                               <div class="skill-inner">
-                                   <img decoding="async" src="https://wpriverthemes.com/drake/wp-content/uploads/2023/03/react.png" alt="">
+                                   <i class="fab fa-js"></i>
                               </div>
-                              <p class="name">React</p>
+                              <p class="name">JavaScript</p>
                          </div>
                     </div>
-                    <div class="col-md-3" >
+                    <div class="col-md-3" data-aos="fade-down" data-aos-duration="900">
                          <div class="skill">
                               <div class="skill-inner">
-                                   <img decoding="async" src="https://wpriverthemes.com/drake/wp-content/uploads/2023/03/wordpress.png" alt="">
+                                   <i class="fab fa-node"></i>
                               </div>
-                              <p class="name">WordPress</p>
+                              <p class="name">Node Js</p>
                          </div>
                     </div>
-                    <div class="col-md-3" >
+                    <div class="col-md-3" data-aos="fade-up-right" data-aos-duration="900">
                          <div class="skill">
                               <div class="skill-inner">
-                                   <img decoding="async" src="https://wpriverthemes.com/drake/wp-content/uploads/2023/03/laravel.png" alt="">
+                                   <i class="fa-brands fa-mdb"></i>
                               </div>
-                              <p class="name">Laravel/PHP</p>
+                              <p class="name">MongoDb</p>
+                         </div>
+                    </div>
+                    <div class="col-md-3" data-aos="fade-down-left" data-aos-duration="900">
+                         <div class="skill">
+                              <div class="skill-inner">
+                                   <i class="fab fa-figma"></i>
+                              </div>
+                              <p class="name">Figma</p>
                          </div>
                     </div>
                </div>
@@ -386,25 +472,38 @@
           </section>
 
           <!-- Footer -->
-          <footer class="d-flex flex-column align-items-center justify-content-center" id="footer">
-             <div class="d-flex foot">
-               <div class="row miniOne">
-                    <div class="col-12 haed">Email</div>
-                    <a class="profileEmail col-5">farinderif@gmail.com</a>
-                    <a class="profileEmail col-5">blinkgraphics05@gmail.com</a>
+          <footer class="" id="footer">
+               <div class="contact-infos">
+                    <ul class="d-flex">
+                         <li>
+                              <div class="icon">
+                                   <i class="fa fa-map"></i>
+                              </div>
+                              <div class="content">
+                                   <h3>Visit Me</h3>
+                                   <p>16/9, Down Street, Edinburgh <br> United Kingdom</p>
+                              </div>
+                         </li>
+                         <li>
+                              <div class="icon">
+                                   <i class="fa fa-headphones"></i>
+                              </div>
+                              <div class="content">
+                                   <h3>Contact Info</h3>
+                                   <p></p><p><a href="tel:+1284789900">+1 2847 89900,</a><a href="tel:+1284789900">+1 2847 89900</a></p><p></p>
+                                   <p><a href="mailto:WordPressRiverstudio@mail.com">example123@yourmail.com</a></p>
+                              </div>
+                         </li>
+                    </ul>
                </div>
-               <div class="row miniTwo">
-                         <div class="col-12 haed">Phone Number</div>
-                         <a class="profileEmail col-5">+234 813 440 7001</a>
-                         <a class="profileEmail col-5">+234 708 408 1546</a>
-               </div>
-             </div>
-              <div class="copyright">
-                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-copyright" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                    <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
-                    <path d="M12 12m-9 0a9 9 0 1 0 18 0a9 9 0 1 0 -18 0" />
-                    <path d="M14 9.75a3.016 3.016 0 0 0 -4.163 .173a2.993 2.993 0 0 0 0 4.154a3.016 3.016 0 0 0 4.163 .173" />
-               </svg> 2024 Drake. All Rights Reserved
+               <div class="d-flex copyright">
+                    <h5 class="copyright mb-0">
+                         <script>
+                              var today = new Date()
+                              var year = today.getFullYear()
+                              document.write(year)
+                         </script> © All rights reserved | Dev SeniorCub
+                    </h5>
                </div>
           </footer>
      </section>
@@ -478,6 +577,7 @@
      <script>
           AOS.init();
      </script>
+     <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
      <script src="script.js"></script>
     
 </body>
