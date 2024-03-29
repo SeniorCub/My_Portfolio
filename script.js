@@ -48,21 +48,3 @@ const sentencess = [
    // Initial start
    intervalId = setInterval(typeWriter, 500);
    intervalIds = setInterval(typeWriter, 800);
-
-   document.getElementById('contactForm').addEventListener('submit', function(event) {
-       event.preventDefault(); // Prevent the form from submitting normally
-
-       // Collect form data
-       const formData = new FormData(this);
-
-       // Construct email body
-       const emailBody = `
-           Name: ${formData.get('name')}
-           Email: ${formData.get('email')}
-           Subject: ${formData.get('subject')}
-           Message: ${formData.get('message')}
-       `;
-
-       // Open default email client
-       window.location.href = 'mailto:farinderif@gmail?subject=New%20Message&body=' + encodeURIComponent(emailBody);
-   });
