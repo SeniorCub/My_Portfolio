@@ -48,3 +48,16 @@ const sentencess = [
    // Initial start
    intervalId = setInterval(typeWriter, 500);
    intervalIds = setInterval(typeWriter, 800);
+
+   function updateTime() {
+     var d = new Date();
+
+     var days = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
+     var months = ["January", "Febuary", "March", "April", "May", "June", "July", "Agust", "September", "October", "November", "December"];
+     document.getElementById("datetime").innerHTML =`${days[d.getDay()]}, ${months[d.getMonth()]} ${d.getDate()}, ${d.getFullYear()}`;
+}
+     // Initial update
+     updateTime();
+
+     // Refresh time every 1 second (1000 milliseconds)
+     setInterval(updateTime, 1000);
