@@ -3,7 +3,7 @@
      padding: 0;
      margin: 0;
      box-sizing: border-box;
-     /* #e82e19 */
+     /* #ff2200 */
 }
 body{
      font-family: "Inter", sans-serif;
@@ -29,7 +29,7 @@ a{
      text-decoration: none;
 }
 i{
-     color: #e82e19;
+     color: #ff2200;
 }
 .leftSide{
      display: flex;
@@ -51,7 +51,7 @@ i{
                font-size: 35px;
                font-weight: 900;
                .logo{
-                    color: #e82e19;
+                    color: #ff2200;
                }
           }
      }
@@ -82,17 +82,17 @@ i{
           color: #fff;
           transition: .3s;
           font-size: 15px;
-          background-color: #e82e19;
+          background-color: #ff2200;
           i{
                color: #fff;
           }
      }
      .hire:hover{
           background-color: transparent;
-          color: #e82e19;
-          border: 1px solid #e82e19;
+          color: #ff2200;
+          border: 1px solid #ff2200;
           i{     
-               color: #e82e19;
+               color: #ff2200;
           }
      }
      #typing-texts{
@@ -133,7 +133,7 @@ i{
    .socialContainer:hover {
      transition-duration: .3s;
      .socialSvg path {
-          fill: #e82e19;
+          fill: #ff2200;
         }
    }
    .socialContainer:active {
@@ -209,7 +209,7 @@ i{
           padding: 13px 21px 13px 20px;
           flex: none;
      }
-     .available-link .online-dot {
+     .online-dot {
           width: 6px;
           height: 6px;
           background: #00A34C;
@@ -217,7 +217,7 @@ i{
           position: relative;
           flex: none;
      }
-     .available-link .online-dot::before {
+     .online-dot::before {
           content: '';
           background: rgb(0, 163, 76);
           position: absolute;
@@ -228,14 +228,14 @@ i{
           border-radius: 50%;
           animation: onlineAnim 1s infinite linear;
      }
-     @keyframes onlineAnim {
-          0% {
-          transform: scale(1);
-          }
-          100% {
-          transform: scale(5);
-          opacity: 0;
-          }
+}
+@keyframes onlineAnim {
+     0% {
+     transform: scale(1);
+     }
+     100% {
+     transform: scale(5);
+     opacity: 0;
      }
 }
 .btnMenu{
@@ -246,7 +246,7 @@ i{
      padding: 10px 15px;
 }
 .btnMenu:hover{
-     border: #e82e19 1px solid;
+     border: #ff2200 1px solid;
 }
 .offcanvas{
      background-color: #1f1f1f;
@@ -259,13 +259,13 @@ i{
      .active{
           color: #fff;
           i{
-               color: #e82e19;
+               color: #ff2200;
           }
      }
      .nav-item:hover{
           color: #fff;
           i{
-               color: #e82e19;
+               color: #ff2200;
           }
      }
      .card {
@@ -289,7 +289,7 @@ i{
         .socialContainer:hover {
           transition-duration: .3s;
           .socialSvg path {
-               fill: #e82e19;
+               fill: #ff2200;
              }
         }
         .socialContainer:active {
@@ -329,7 +329,7 @@ i{
           line-height: 90px;
           font-weight: 300;
           span{
-               color: #e82e19;
+               color: #ff2200;
           }
      }
      #typing-text {
@@ -386,7 +386,7 @@ i{
      margin-bottom: 55px;
      .years{
           font-size: 72px;
-          color: #e82e19;
+          color: #ff2200;
           line-height: 56px;
           margin-bottom: 38px;
      }
@@ -406,7 +406,7 @@ i{
           margin-bottom: 33px;
           width: 80%;
           span{
-               color: #e82e19;
+               color: #ff2200;
           }
      }
      .about-image-wrap {
@@ -425,12 +425,12 @@ i{
      .about-bg {
           border-radius: 10%;
           border-radius: 2% 30%;
-          background-image: linear-gradient(315deg, #e82e1997 5%, #e82e19b5 95%)
+          background-image: linear-gradient(315deg, #ff220097 5%, #ff2200b5 95%)
      }
      .storyGan{
           padding-bottom: 10px;
           margin-bottom: 10px;
-          border-bottom: 1px solid #e82e19;
+          border-bottom: 1px solid #ff2200;
      }
      .info1{
           color: #fff;
@@ -457,13 +457,13 @@ i{
           text-shadow: 0 1px #fff;
      }
      button:hover {
-          box-shadow: 0 4px 3px 1px #e82e19, 0 6px 8px #e82e19cc, 0 -4px 4px #e82c1799, 0 -6px 4px #e82c1766, inset 0 0 3px 3px #999;
+          box-shadow: 0 4px 3px 1px #ff2200, 0 6px 8px #ff2200cc, 0 -4px 4px #e82c1799, 0 -6px 4px #e82c1766, inset 0 0 3px 3px #999;
      }
      button:active {
-          box-shadow: 0 4px 3px 1px #e82e19, 0 6px 8px #e82e19cc, 0 -4px 4px #e82c1799, 0 -6px 4px #e82c1766, inset 0 0 5px 3px #999, inset 0 0 30px #aaa;
+          box-shadow: 0 4px 3px 1px #ff2200, 0 6px 8px #ff2200cc, 0 -4px 4px #e82c1799, 0 -6px 4px #e82c1766, inset 0 0 5px 3px #999, inset 0 0 30px #aaa;
      }
      button:focus {
-          box-shadow: 0 4px 3px 1px #e82e19, 0 6px 8px #e82e19cc, 0 -4px 4px #e82c1799, 0 -6px 4px #e82c1766, inset 0 0 5px 3px #999, inset 0 0 30px #aaa;
+          box-shadow: 0 4px 3px 1px #ff2200, 0 6px 8px #ff2200cc, 0 -4px 4px #e82c1799, 0 -6px 4px #e82c1766, inset 0 0 5px 3px #999, inset 0 0 30px #aaa;
      }   
 }
 /* Resume */
@@ -491,7 +491,7 @@ i{
           }
      }
      .resume-timeline .item:hover .date {
-     color: #e82e19;
+     color: #ff2200;
      }
      .resume-timeline .item::after {
           content: '';
@@ -504,7 +504,7 @@ i{
           z-index: -1;
      }
      .resume-timeline .item:hover::before {
-          background: #e82e19;
+          background: #ff2200;
      }
      .resume-timeline .item::before {
           content: '';
@@ -517,7 +517,7 @@ i{
           transition: .3s;
      }
      .resume-timeline .item:hover::before {
-          background: #e82e19;
+          background: #ff2200;
      }
 
      .resume-timeline .item::before {
@@ -531,7 +531,7 @@ i{
           transition: .3s;
      }
      .resume-timeline .item:hover::before {
-          background: #e82e19;
+          background: #ff2200;
      }
 
      .resume-timeline .item::before {
@@ -556,11 +556,11 @@ i{
           display: block;
           font-weight: 400;
           font-variant-numeric: lining-nums;
-          color: #e82e19;
+          color: #ff2200;
      }
      .resume-lines__source a{
           font-weight:400;
-          color: #e82e19;
+          color: #ff2200;
      }
      .resume-lines__title {
           font-weight: 700;
@@ -600,7 +600,7 @@ i{
      i {
           position: absolute;
           font-size: 30px;
-          color:#e82e19;
+          color:#ff2200;
           top: 45px;
           right: 50px;
      }
@@ -610,7 +610,7 @@ i{
      }
      .service-item:hover {
           h3 {
-               color:#e82e19;
+               color:#ff2200;
           }
           .projects {
                text-decoration: underline;
@@ -637,7 +637,7 @@ i{
      transition: .3s;
      h2 {
           font-size: 30px;
-          color: #e82e19;
+          color: #ff2200;
           font-weight: 300;
           margin: 0;
      }
@@ -648,12 +648,12 @@ i{
      }
 }
 .skills .skill:hover .skill-inner {
-     border-color: #e82e19;
+     border-color: #ff2200;
      h2{
           color: #fff;
      }
      i{
-          color: #e82e19;
+          color: #ff2200;
      }
 }
 /* 14 - Portfolio */
@@ -732,7 +732,7 @@ swiper-container {
 
           color: #fff;
           background: #161616;
-          border: #e82e19 1px solid;
+          border: #ff2200 1px solid;
           .imagg{
                width: 60px;
                height: 60px;
@@ -796,7 +796,7 @@ textarea::-webkit-scrollbar{
      display: none;
 }
 .contactForm input:focus, textarea:focus{
-     outline: 2px solid #e82e19!important;
+     outline: 2px solid #ff2200!important;
 }
 .contactForm button:hover{
      box-shadow: 10px 10px 19px #2c2c2c, -10px -10px 19px #161616;
@@ -835,7 +835,7 @@ textarea::-webkit-scrollbar{
                backdrop-filter: blur(15px);
           }
           i {
-               color: #e82e19;
+               color: #ff2200;
                font-size: 22px;
           }
           .content {
@@ -849,8 +849,8 @@ textarea::-webkit-scrollbar{
           }
           .content::before {
                content: "";
-               border-bottom: 1px dashed #e82e19;
-               border-left: 1px dashed #e82e19;
+               border-bottom: 1px dashed #ff2200;
+               border-left: 1px dashed #ff2200;
                top: 52px;
                height: 24px;
                left: -45px;
@@ -864,7 +864,7 @@ textarea::-webkit-scrollbar{
                font-size: 16px;
                letter-spacing: -0.75px;
                margin: 0 0 10px;
-               color:#e82e19;
+               color:#ff2200;
                font-weight: 400;
           }
           p {

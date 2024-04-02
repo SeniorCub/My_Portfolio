@@ -1,20 +1,20 @@
-@media (max-width: 915px) {
-     body{
-          overflow-x: hidden!important;
-          height: auto;
+     @media (max-width: 915px) {
+          body{
+               overflow-x: hidden!important;
+               height: auto;
+          }
+          .leftSide{
+               .profilInfo{
+                    font-size: 20px;
+               }
+               .hire{
+                    width: 85%;
+               }
+               .copyright{
+                    font-size: 12px;
+               }
+          }
      }
-     .leftSide{
-          .profilInfo{
-               font-size: 20px;
-          }
-          .hire{
-               width: 85%;
-          }
-          .copyright{
-               font-size: 12px;
-          }
-     }
-}
 @media (max-width: 853px) {
      body{
           overflow-x: hidden!important;
@@ -24,11 +24,22 @@
           position: initial;
           width: 100vw;
           top: 0;
+          padding-top: 5vh;
           transform: none;
           height: 85vh;
           .head{
                justify-content: space-between;
           }
+     }
+     .available-link-wrap {
+          width: 40vw!important;
+     }
+     .available-link {
+          padding: 10px!important;
+     }
+     .time{
+          left: 0!important;
+          width: max-content!important;
      }
      #navbar-example2{
           display: none!important;
@@ -64,6 +75,26 @@
      .yearss {
           gap: 0;
           justify-content: space-around;
+     }
+     .aboutMe{
+          padding: 0 20px;
+          .about-image, .about-bg {
+               width: 90%!important;
+          }
+          .ms-5{
+               margin: 0!important;
+          }
+          .StoryInfo{
+               .sec{
+                    gap: 20px;
+               }
+               .info1{
+                    flex-direction: row!important;
+               }
+          }
+     }
+     .resume-lines__item, .service-item{
+          width: 85vw;
      }
      .skills{
           display: grid;
