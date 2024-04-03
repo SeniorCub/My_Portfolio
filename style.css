@@ -421,9 +421,6 @@ i{
      }
       .about-bg {
           height: 100%;
-     }
-     .about-bg {
-          border-radius: 10%;
           border-radius: 2% 30%;
           background-image: linear-gradient(315deg, #ff220097 5%, #ff2200b5 95%)
      }
