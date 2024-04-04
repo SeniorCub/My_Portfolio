@@ -56,8 +56,55 @@ const sentencess = [
      var months = ["January", "Febuary", "March", "April", "May", "June", "July", "Agust", "September", "October", "November", "December"];
      document.getElementById("datetime").innerHTML =`${days[d.getDay()]}, ${months[d.getMonth()]} ${d.getDate()}, ${d.getFullYear()}`;
 }
-     // Initial update
-     updateTime();
+// Initial update
+updateTime();
 
-     // Refresh time every 1 second (1000 milliseconds)
-     setInterval(updateTime, 1000);
+// Refresh time every 1 second (1000 milliseconds)
+setInterval(updateTime, 1000);
+
+document.getElementById("downloadButton").addEventListener("click", function() {
+     // Change 'path/to/your/pdf/file.pdf' to the actual path of your PDF file
+     var pdfUrl = '5BasicCodingConcepts.pdf';
+     
+     // Create a link element
+     var link = document.createElement('a');
+     
+     // Set the href attribute to the PDF file URL
+     link.href = pdfUrl;
+     
+     // Set the download attribute to force download the PDF file instead of opening it in a new tab
+     link.download = 'resume.pdf';
+     
+     // Append the link to the document body
+     document.body.appendChild(link);
+     
+     // Trigger a click event on the link
+     link.click();
+     
+     // Remove the link from the document body
+     document.body.removeChild(link);
+
+});
+     
+let fullName = document.querySelector('#name').value;
+let phoneNumber = document.querySelector('#phone').value;
+let email = document.querySelector('#email').value;
+let subject = document.querySelector('#subject').value;
+let message = document.querySelector('#message').value;
+document.querySelector('#sendEmail').addEventListener('click', sendEmail);
+
+function sendEmail(event) {
+    event.preventDefault(); // Prevent form submission
+
+    let fullName = document.querySelector('#name').value;
+    let phoneNumber = document.querySelector('#phone').value;
+    let email = document.querySelector('#email').value;
+    let subject = document.querySelector('#subject').value;
+    let message = document.querySelector('#message').value;
+
+    // Construct mailto link with variables
+    let mailtoLink = `mailto:blinkgraphics05@gmail.com?subject=${encodeURIComponent(subject)}&body=Name: ${encodeURIComponent(fullName)}%0APhone: ${encodeURIComponent(phoneNumber)}%0AEmail: ${encodeURIComponent(email)}%0AMessage: ${encodeURIComponent(message)}`;
+
+    // Open mail client
+    window.location.href = mailtoLink;
+}
