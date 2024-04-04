@@ -81,6 +81,9 @@
           .about-image, .about-bg {
                width: 90%!important;
           }
+          .about-bg {
+               border-radius: 2% 10%;
+          }
           .ms-5{
                margin: 0!important;
           }
@@ -99,6 +102,15 @@
      .skills{
           display: grid;
           grid-template-columns: repeat(2,1fr)!important;
+          .skill-inner{
+               i{
+                    font-size: 60px!important;
+               }
+          }
+     }
+     .time{
+          left: 0!important;
+      
      }
      swiper-container {
           width: 80%;
@@ -116,5 +128,14 @@
      }
      .col-md-3{
           width: 80%!important;
+     }
+     #footer{
+          ul{
+               flex-direction: column;
+               gap: 20px;
+          }
+          .socialls{
+               gap: 5px;
+          }
      }
 }
