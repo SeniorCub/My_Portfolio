@@ -64,7 +64,7 @@ setInterval(updateTime, 1000);
 
 document.getElementById("downloadButton").addEventListener("click", function() {
      // Change 'path/to/your/pdf/file.pdf' to the actual path of your PDF file
-     var pdfUrl = '5BasicCodingConcepts.pdf';
+     var pdfUrl = 'MyResume.pdf';
      
      // Create a link element
      var link = document.createElement('a');
@@ -108,3 +108,14 @@ function sendEmail(event) {
     // Open mail client
     window.location.href = mailtoLink;
 }
+document.querySelectorAll('.read-more-btn').forEach(btn => {
+     btn.addEventListener('click', function() {
+     const text = this.parentElement.querySelector('.resume-lines__descr .remaining-text');
+     text.classList.toggle('show');
+     if (text.classList.contains('show')) {
+          this.innerText = 'Read Less';
+     } else {
+          this.innerText = 'Read More';
+     }
+     });
+}); 

@@ -435,7 +435,7 @@ i{
                color: #999;
           }
      }
-     button {
+     #downloadButton {
           display: flex;
           align-items: center;
           justify-content: center;
@@ -453,13 +453,13 @@ i{
           color: #606060;
           text-shadow: 0 1px #fff;
      }
-     button:hover {
+     #downloadButton:hover {
           box-shadow: 0 4px 3px 1px #ff2200, 0 6px 8px #ff2200cc, 0 -4px 4px #e82c1799, 0 -6px 4px #e82c1766, inset 0 0 3px 3px #999;
      }
-     button:active {
+     #downloadButton:active {
           box-shadow: 0 4px 3px 1px #ff2200, 0 6px 8px #ff2200cc, 0 -4px 4px #e82c1799, 0 -6px 4px #e82c1766, inset 0 0 5px 3px #999, inset 0 0 30px #aaa;
      }
-     button:focus {
+     #downloadButton:focus {
           box-shadow: 0 4px 3px 1px #ff2200, 0 6px 8px #ff2200cc, 0 -4px 4px #e82c1799, 0 -6px 4px #e82c1766, inset 0 0 5px 3px #999, inset 0 0 30px #aaa;
      }   
 }
@@ -567,7 +567,25 @@ i{
      .resume-lines__descr {
           color: #aaa;
      }
+     .resume-lines__descr .remaining-text {
+          display: none;
+     }
+      .read-more-btn {
+          color: #ff2200;
+          border: none;
+          cursor: pointer;
+          background-color: transparent;
+          font-size: 10px;
+          font-weight: 400;
+          text-decoration: underline;
+          &:hover {
+               color: #ff22006f;
+          }
+      }      
 }
+      .show{
+          display: inline!important;
+      }
 /* Services */
 .services-items{
      .service-item {
