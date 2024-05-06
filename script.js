@@ -103,7 +103,7 @@ function sendEmail(event) {
     let message = document.querySelector('#message').value;
 
     // Construct mailto link with variables
-    let mailtoLink = `https://mailto:blinkgraphics05@gmail.com?subject=${encodeURIComponent(subject)}&body=Name: ${encodeURIComponent(fullName)}%0APhone: ${encodeURIComponent(phoneNumber)}%0AEmail: ${encodeURIComponent(email)}%0AMessage: ${encodeURIComponent(message)}`;
+    let mailtoLink = `mailto:blinkgraphics05@gmail.com?subject=${encodeURIComponent(subject)}&body=Name: ${encodeURIComponent(fullName)}%0APhone: ${encodeURIComponent(phoneNumber)}%0AEmail: ${encodeURIComponent(email)}%0AMessage: ${encodeURIComponent(message)}`;
 
     // Open mail client
     window.location.href = mailtoLink;
