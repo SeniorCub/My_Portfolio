@@ -736,7 +736,7 @@ i{
  /* Tesrimonials */
 swiper-container {
      width: 50%;
-     height: 350px;
+     height: max-content;
      margin: 0 auto;
      swiper-slide {
           display: flex;
@@ -745,7 +745,6 @@ swiper-container {
           flex-direction: column;
           gap: 50px;
           padding: 15px;
-
           color: #fff;
           background: #161616;
           border: #ff2200 1px solid;
