@@ -1,4 +1,4 @@
-     @media (max-width: 915px) {
+@media (max-width: 915px) {
           body{
                overflow-x: hidden!important;
                height: auto;
@@ -14,7 +14,10 @@
                     font-size: 12px;
                }
           }
+          .go-to-project-btn{
+               margin-right: auto;
      }
+}
 @media (max-width: 853px) {
      body{
           overflow-x: hidden!important;
@@ -137,5 +140,13 @@
           .socialls{
                gap: 5px;
           }
+     }
+}
+@media (max-width: 500px) {
+     .about-image-wrap {
+          height: 20vh!important;
+     }
+     swiper-slide {
+          height: 40vh!important;
      }
 }
