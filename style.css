@@ -589,9 +589,9 @@ i{
           }
       }      
 }
-      .show{
-          display: inline!important;
-      }
+.show{
+     display: inline!important;
+}
 /* Services */
 .services-items{
      .service-item {
@@ -678,22 +678,23 @@ i{
      }
 }
 /* 14 - Portfolio */
-.portfolio-area {
-     padding-top: 90px;
-     padding-bottom: 90px;
- }
- .portfolio-items .portfolio-item {
-     margin-bottom: 62px;
- }
- .portfolio-items > div:last-child .portfolio-item {
-     margin-bottom: 0;
- }
- .portfolio-items .portfolio-item .portfolio-item-inner {
-     height: 370px;
-     overflow: hidden;
-     position: relative;
-     margin-bottom: 30px;
- }
+#portfolio{
+     .portfolio-area {
+          padding-top: 90px;
+          padding-bottom: 90px;
+     }
+     .portfolio-items .portfolio-item {
+          margin-bottom: 62px;
+     }
+     .portfolio-items > div:last-child .portfolio-item {
+          margin-bottom: 0;
+     }
+     .portfolio-items .portfolio-item .portfolio-item-inner {
+          height: 370px;
+          overflow: hidden;
+          position: relative;
+          margin-bottom: 30px;
+     }
  .portfolio-items .portfolio-item.portfolio-full .portfolio-item-inner {
      height: 410px;
  }
@@ -715,8 +716,8 @@ i{
  .portfolio-items .portfolio-item .portfolio-item-inner .portfolio-categories li a {
      display: block;
      font-size: 14px;
-     background: #fff;
-     color: #000;
+     background: #ff2200;
+     color: #fff;
      padding: 7px 20px;
      transition: .3s;
  }
@@ -738,6 +739,7 @@ i{
  .portfolio-items .portfolio-item:hover h3 a {
      border-color: #fff;
  }
+}
  /* Tesrimonials */
 swiper-container {
      width: 50%;
