@@ -20,7 +20,6 @@ body::-webkit-scrollbar{
 img{
      width: 100%;
      height: 100%;
-     cursor: not-allowed;
      object-fit: cover;
 }
 li{
@@ -28,6 +27,7 @@ li{
 }
 a{
      text-decoration: none;
+     cursor: pointer;
 }
 i{
      color: #ff2200;

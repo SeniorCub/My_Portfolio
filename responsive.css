@@ -23,6 +23,9 @@
           overflow-x: hidden!important;
           height: auto;
      }
+     .offcanvas.offcanvas-end {
+          width: 70%;
+     }
      .leftSide{
           position: initial;
           width: 100vw;
@@ -48,7 +51,9 @@
           display: none!important;
      }
      .btnMenu{
-          display: none;
+          position: fixed;
+          top: 20%;
+          right: 0;
      }
      .btnMenu2{
           color: #fff;
@@ -83,9 +88,13 @@
           padding: 0 20px;
           .about-image, .about-bg {
                width: 90%!important;
+               height: 30vh;
           }
           .about-bg {
                border-radius: 2% 10%;
+          }
+          .aboutHead{
+               margin-top: 10vh;
           }
           .ms-5{
                margin: 0!important;
