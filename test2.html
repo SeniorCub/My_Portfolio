@@ -13,21 +13,67 @@
             margin: 0;
             box-sizing: border-box;
         }
+        body{
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          width: 100vw;
+          height: 100vh;
+        }
         .boxes {
-            width: 100vw;
-            height: 100vh;
             display: grid;
-            grid-template-columns: repeat(80, 10px); /* More columns for better precision */
-            grid-template-rows: repeat(15, 10px); /* More rows for better control */
+            grid-template-columns: repeat(75, 15px); /* More columns for better precision */
+            grid-template-rows: repeat(7, 15px); /* More rows for better control */
             gap: 2px;
         }
-        .grid-item {
+        .box {
             border-radius: 5px;
             background-color: var(--red);
             opacity: 30%;
+            font-size: 10px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: aliceblue;
         }
-
-       
+        /* D */
+     .box:nth-child(2), .box:nth-child(78) ,.box:nth-child(154) ,.box:nth-child(230) ,.box:nth-child(304),.box:nth-child(378),.box:nth-child(452){
+          opacity: 100%;
+     }
+     /* E */
+     .box:nth-child(7), .box:nth-child(82) ,.box:nth-child(157) ,.box:nth-child(232) ,.box:nth-child(307),.box:nth-child(382),.box:nth-child(457){
+          opacity: 100%;
+     }
+     .box:nth-child(8), .box:nth-child(9) ,.box:nth-child(10) ,.box:nth-child(11) {
+          opacity: 100%;
+     }
+     .box:nth-child(233), .box:nth-child(234) ,.box:nth-child(235) ,.box:nth-child(236) {
+          opacity: 100%;
+     }
+     .box:nth-child(458), .box:nth-child(459) ,.box:nth-child(460) ,.box:nth-child(461) {
+          opacity: 100%;
+     }
+     /* V */
+     .box:nth-child(13), .box:nth-child(17), .box:nth-child(314), .box:nth-child(316), .box:nth-child(465){
+          opacity: 100%;
+     }
+     .box:nth-child(88), .box:nth-child(163), .box:nth-child(239), .box:nth-child(389){
+          opacity: 100%;
+     }
+     .box:nth-child(92), .box:nth-child(167), .box:nth-child(241), .box:nth-child(391){
+          opacity: 100%;
+     }
+     /* - */
+     .box:nth-child(244), .box:nth-child(319), .box:nth-child(245), .box:nth-child(320){
+          opacity: 100%;
+     }
+     /* S */
+     .box:nth-child(22), .box:nth-child(23), .box:nth-child(24), .box:nth-child(25), .box:nth-child(26){
+          opacity: 100%;
+     }
+     .box:nth-child(472), .box:nth-child(473), .box:nth-child(474), .box:nth-child(475), .box:nth-child(476){
+          opacity: 100%;
+     }
     </style>
 </head>
 <body>
@@ -36,9 +82,10 @@
       <!-- Use JavaScript to dynamically generate the grid items -->
       <script>
           const container = document.querySelector('.boxes');
-          for (let i = 0; i < 360; i++) {
+          for (let i = 0; i < 525; i++) {
               const div = document.createElement('div');
-              div.classList.add('grid-item');
+              div.classList.add('box');
+              div.innerText = i;
               container.appendChild(div);
           }
       </script>
