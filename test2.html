@@ -1,579 +1,211 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-     <meta charset="UTF-8">
-     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-     <title>Document</title>
-     <style>
-          :root{
-               --red: #ff2200;
-          }
-          *{
-               padding: 0;
-               margin: 0;
-               box-sizing: border-box;
-          }
-          .boxes{
-               width: 100vw;
-               height: 100vh;
-               display: grid;
-               grid-template-columns: repeat(75, 1fr);
-               gap: 10px;
-          }
-          .box{
-               border-radius: 10px;
-               background-color: var(--red);
-               opacity: 30%;
-          }
-          /* D */
-          .box:nth-child(1), .box:nth-child(76) ,.box:nth-child(151) ,.box:nth-child(226) ,.box:nth-child(301),.box:nth-child(376),.box:nth-child(451){
-               opacity: 100%;
-          }
-          .box:nth-child(2), .box:nth-child(78) ,.box:nth-child(154) ,.box:nth-child(230) ,.box:nth-child(304),.box:nth-child(378),.box:nth-child(452){
-               opacity: 100%;
-          }
-          /* E */
-          .box:nth-child(7), .box:nth-child(82) ,.box:nth-child(157) ,.box:nth-child(232) ,.box:nth-child(307),.box:nth-child(382),.box:nth-child(457){
-               opacity: 100%;
-          }
-          .box:nth-child(8), .box:nth-child(9) ,.box:nth-child(10) ,.box:nth-child(11) {
-               opacity: 100%;
-          }
-          .box:nth-child(233), .box:nth-child(234) ,.box:nth-child(235) ,.box:nth-child(236) {
-               opacity: 100%;
-          }
-          .box:nth-child(458), .box:nth-child(459) ,.box:nth-child(460) ,.box:nth-child(461) {
-               opacity: 100%;
-          }
-     </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dev - SeniorCub</title>
+    <style>
+        :root {
+            --red: #ff2200;
+        }
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        .boxes {
+            width: 100vw;
+            height: 100vh;
+            display: grid;
+            grid-template-columns: repeat(80, 10px); /* More columns for better precision */
+            grid-template-rows: repeat(15, 10px); /* More rows for better control */
+            gap: 2px;
+        }
+        .grid-item {
+            border-radius: 5px;
+            background-color: var(--red);
+            opacity: 30%;
+        }
+
+        /* Letter D */
+        .grid-item:nth-child(1),
+        .grid-item:nth-child(2),
+        .grid-item:nth-child(3),
+        .grid-item:nth-child(4),
+        .grid-item:nth-child(5),
+        .grid-item:nth-child(6),
+        .grid-item:nth-child(11),
+        .grid-item:nth-child(16),
+        .grid-item:nth-child(21),
+        .grid-item:nth-child(26),
+        .grid-item:nth-child(31),
+        .grid-item:nth-child(32),
+        .grid-item:nth-child(33),
+        .grid-item:nth-child(34),
+        .grid-item:nth-child(35),
+        .grid-item:nth-child(36) {
+            opacity: 1;
+        }
+
+        /* Letter e */
+        .grid-item:nth-child(8),
+        .grid-item:nth-child(9),
+        .grid-item:nth-child(10),
+        .grid-item:nth-child(13),
+        .grid-item:nth-child(18),
+        .grid-item:nth-child(23),
+        .grid-item:nth-child(24),
+        .grid-item:nth-child(25),
+        .grid-item:nth-child(30),
+        .grid-item:nth-child(35) {
+            opacity: 1;
+        }
+
+        /* Letter v */
+        .grid-item:nth-child(6),
+        .grid-item:nth-child(12),
+        .grid-item:nth-child(18),
+        .grid-item:nth-child(24),
+        .grid-item:nth-child(30),
+        .grid-item:nth-child(36),
+        .grid-item:nth-child(42),
+        .grid-item:nth-child(48),
+        .grid-item:nth-child(54),
+        .grid-item:nth-child(60) {
+            opacity: 1;
+        }
+
+        /* Dash (-) */
+        .grid-item:nth-child(22),
+        .grid-item:nth-child(23),
+        .grid-item:nth-child(24),
+        .grid-item:nth-child(25),
+        .grid-item:nth-child(26) {
+            opacity: 1;
+        }
+
+        /* Letter S */
+        .grid-item:nth-child(40),
+        .grid-item:nth-child(41),
+        .grid-item:nth-child(42),
+        .grid-item:nth-child(43),
+        .grid-item:nth-child(48),
+        .grid-item:nth-child(53),
+        .grid-item:nth-child(58),
+        .grid-item:nth-child(59),
+        .grid-item:nth-child(60) {
+            opacity: 1;
+        }
+
+        /* Letter e */
+        .grid-item:nth-child(61),
+        .grid-item:nth-child(62),
+        .grid-item:nth-child(63),
+        .grid-item:nth-child(66),
+        .grid-item:nth-child(71),
+        .grid-item:nth-child(76),
+        .grid-item:nth-child(81),
+        .grid-item:nth-child(82),
+        .grid-item:nth-child(83),
+        .grid-item:nth-child(88) {
+            opacity: 1;
+        }
+
+        /* Letter n */
+        .grid-item:nth-child(100),
+        .grid-item:nth-child(101),
+        .grid-item:nth-child(102),
+        .grid-item:nth-child(103),
+        .grid-item:nth-child(108),
+        .grid-item:nth-child(113),
+        .grid-item:nth-child(118),
+        .grid-item:nth-child(123) {
+            opacity: 1;
+        }
+
+        /* Letter i */
+        .grid-item:nth-child(141),
+        .grid-item:nth-child(146),
+        .grid-item:nth-child(151),
+        .grid-item:nth-child(156),
+        .grid-item:nth-child(161) {
+            opacity: 1;
+        }
+
+        /* Letter o */
+        .grid-item:nth-child(180),
+        .grid-item:nth-child(181),
+        .grid-item:nth-child(182),
+        .grid-item:nth-child(183),
+        .grid-item:nth-child(186),
+        .grid-item:nth-child(191),
+        .grid-item:nth-child(196),
+        .grid-item:nth-child(201),
+        .grid-item:nth-child(206) {
+            opacity: 1;
+        }
+
+        /* Letter r */
+        .grid-item:nth-child(220),
+        .grid-item:nth-child(221),
+        .grid-item:nth-child(222),
+        .grid-item:nth-child(223),
+        .grid-item:nth-child(228),
+        .grid-item:nth-child(233) {
+            opacity: 1;
+        }
+
+        /* Letter C */
+        .grid-item:nth-child(240),
+        .grid-item:nth-child(241),
+        .grid-item:nth-child(242),
+        .grid-item:nth-child(243),
+        .grid-item:nth-child(244),
+        .grid-item:nth-child(249),
+        .grid-item:nth-child(259),
+        .grid-item:nth-child(260),
+        .grid-item:nth-child(261) {
+            opacity: 1;
+        }
+
+        /* Letter u */
+        .grid-item:nth-child(280),
+        .grid-item:nth-child(281),
+        .grid-item:nth-child(282),
+        .grid-item:nth-child(283),
+        .grid-item:nth-child(288),
+        .grid-item:nth-child(293),
+        .grid-item:nth-child(298),
+        .grid-item:nth-child(299) {
+            opacity: 1;
+        }
+
+        /* Letter b */
+        .grid-item:nth-child(320),
+        .grid-item:nth-child(321),
+        .grid-item:nth-child(322),
+        .grid-item:nth-child(323),
+        .grid-item:nth-child(324),
+        .grid-item:nth-child(329),
+        .grid-item:nth-child(334),
+        .grid-item:nth-child(335),
+        .grid-item:nth-child(336) {
+            opacity: 1;
+        }
+    </style>
 </head>
 <body>
     <div class="boxes">
-          <div class="box"></div>
-          <div class="box"></div>
-          <div class="box"></div>
-          <div class="box"></div>
-          <div class="box"></div>
-          <div class="box"></div>
-          <div class="box"></div>
-          <div class="box"></div>
-          <div class="box"></div>
-          <div class="box"></div>
-          <div class="box"></div>
-          <div class="box"></div>
-          <div class="box"></div>
-          <div class="box"></div>
-          <div class="box"></div>
-          <div class="box"></div>
-          <div class="box"></div>
-          <div class="box"></div>
-          <div class="box"></div>
-          <div class="box"></div>
-          <div class="box"></div>
-          <div class="box"></div>
-          <div class="box"></div>
-          <div class="box"></div>
-          <div class="box"></div>
-          <div class="box"></div>
-          <div class="box"></div>
-          <div class="box"></div>
-          <div class="box"></div>
-          <div class="box"></div>
-          <div class="box"></div>
-          <div class="box"></div>
-          <div class="box"></div>
-          <div class="box"></div>
-          <div class="box"></div>
-          <div class="box"></div>
-          <div class="box"></div>
-          <div class="box"></div>
-          <div class="box"></div>
-          <div class="box"></div>
-          <div class="box"></div>
-          <div class="box"></div>
-          <div class="box"></div>
-          <div class="box"></div>
-          <div class="box"></div>
-          <div class="box"></div>
-          <div class="box"></div>
-          <div class="box"></div>
-          <div class="box"></div>
-          <div class="box"></div>
-          <div class="box"></div>
-          <div class="box"></div>
-          <div class="box"></div>
-          <div class="box"></div>
-          <div class="box"></div>
-          <div class="box"></div>
-          <div class="box"></div>
-          <div class="box"></div>
-          <div class="box"></div>
-          <div class="box"></div>
-          <div class="box"></div>
-          <div class="box"></div>
-          <div class="box"></div>
-          <div class="box"></div>
-          <div class="box"></div>
-          <div class="box"></div>
-          <div class="box"></div>
-          <div class="box"></div>
-          <div class="box"></div>
-          <div class="box"></div>
-          <div class="box"></div>
-          <div class="box"></div>
-          <div class="box"></div>
-          <div class="box"></div>
-          <div class="box"></div>
-          <div class="box"></div>
-          <div class="box"></div>
-          <div class="box"></div>
-          <div class="box"></div>
-          <div class="box"></div>
-          <div class="box"></div>
-          <div class="box"></div>
-          <div class="box"></div>
-          <div class="box"></div>
-          <div class="box"></div>
-          <div class="box"></div>
-          <div class="box"></div>
-          <div class="box"></div>
-          <div class="box"></div>
-          <div class="box"></div>
-          <div class="box"></div>
-          <div class="box"></div>
-          <div class="box"></div>
-          <div class="box"></div>
-          <div class="box"></div>
-          <div class="box"></div>
-          <div class="box"></div>
-          <div class="box"></div>
-          <div class="box"></div>
-          <div class="box"></div>
-          <div class="box"></div>
-          <div class="box"></div>
-          <div class="box"></div>
-          <div class="box"></div>
-          <div class="box"></div>
-          <div class="box"></div>
-          <div class="box"></div>
-          <div class="box"></div>
-          <div class="box"></div>
-          <div class="box"></div>
-          <div class="box"></div>
-          <div class="box"></div>
-          <div class="box"></div>
-          <div class="box"></div>
-          <div class="box"></div>
-          <div class="box"></div>
-          <div class="box"></div>
-          <div class="box"></div>
-          <div class="box"></div>
-          <div class="box"></div>
-          <div class="box"></div>
-          <div class="box"></div>
-          <div class="box"></div>
-          <div class="box"></div>
-          <div class="box"></div>
-          <div class="box"></div>
-          <div class="box"></div>
-          <div class="box"></div>
-          <div class="box"></div>
-          <div class="box"></div>
-          <div class="box"></div>
-          <div class="box"></div>
-          <div class="box"></div>
-          <div class="box"></div>
-          <div class="box"></div>
-          <div class="box"></div>
-          <div class="box"></div>
-          <div class="box"></div>
-          <div class="box"></div>
-          <div class="box"></div>
-          <div class="box"></div>
-          <div class="box"></div>
-          <div class="box"></div>
-          <div class="box"></div>
-          <div class="box"></div>
-          <div class="box"></div>
-          <div class="box"></div>
-          <div class="box"></div>
-          <div class="box"></div>
-          <div class="box"></div>
-          <div class="box"></div>
-          <div class="box"></div>
-          <div class="box"></div>
-          <div class="box"></div>
-          <div class="box"></div>
-          <div class="box"></div>
-          <div class="box"></div>
-          <div class="box"></div>
-          <div class="box"></div>
-          <div class="box"></div>
-          <div class="box"></div>
-          <div class="box"></div>
-          <div class="box"></div>
-          <div class="box"></div>
-          <div class="box"></div>
-          <div class="box"></div>
-          <div class="box"></div>
-          <div class="box"></div>
-          <div class="box"></div>
-          <div class="box"></div>
-          <div class="box"></div>
-          <div class="box"></div>
-          <div class="box"></div>
-          <div class="box"></div>
-          <div class="box"></div>
-          <div class="box"></div>
-          <div class="box"></div>
-          <div class="box"></div>
-          <div class="box"></div>
-          <div class="box"></div>
-          <div class="box"></div>
-          <div class="box"></div>
-          <div class="box"></div>
-          <div class="box"></div>
-          <div class="box"></div>
-          <div class="box"></div>
-          <div class="box"></div>
-          <div class="box"></div>
-          <div class="box"></div>
-          <div class="box"></div>
-          <div class="box"></div>
-          <div class="box"></div>
-          <div class="box"></div>
-          <div class="box"></div>
-          <div class="box"></div>
-          <div class="box"></div>
-          <div class="box"></div>
-          <div class="box"></div>
-          <div class="box"></div>
-          <div class="box"></div>
-          <div class="box"></div>
-          <div class="box"></div>
-          <div class="box"></div>
-          <div class="box"></div>
-          <div class="box"></div>
-          <div class="box"></div>
-          <div class="box"></div>
-          <div class="box"></div>
-          <div class="box"></div>
-          <div class="box"></div>
-          <div class="box"></div>
-          <div class="box"></div>
-          <div class="box"></div>
-          <div class="box"></div>
-          <div class="box"></div>
-          <div class="box"></div>
-          <div class="box"></div>
-          <div class="box"></div>
-          <div class="box"></div>
-          <div class="box"></div>
-          <div class="box"></div>
-          <div class="box"></div>
-          <div class="box"></div>
-          <div class="box"></div>
-          <div class="box"></div>
-          <div class="box"></div>
-          <div class="box"></div>
-          <div class="box"></div>
-          <div class="box"></div>
-          <div class="box"></div>
-          <div class="box"></div>
-          <div class="box"></div>
-          <div class="box"></div>
-          <div class="box"></div>
-          <div class="box"></div>
-          <div class="box"></div>
-          <div class="box"></div>
-          <div class="box"></div>
-          <div class="box"></div>
-          <div class="box"></div>
-          <div class="box"></div>
-          <div class="box"></div>
-          <div class="box"></div>
-          <div class="box"></div>
-          <div class="box"></div>
-          <div class="box"></div>
-          <div class="box"></div>
-          <div class="box"></div>
-          <div class="box"></div>
-          <div class="box"></div>
-          <div class="box"></div>
-          <div class="box"></div>
-          <div class="box"></div>
-          <div class="box"></div>
-          <div class="box"></div>
-          <div class="box"></div>
-          <div class="box"></div>
-          <div class="box"></div>
-          <div class="box"></div>
-          <div class="box"></div>
-          <div class="box"></div>
-          <div class="box"></div>
-          <div class="box"></div>
-          <div class="box"></div>
-          <div class="box"></div>
-          <div class="box"></div>
-          <div class="box"></div>
-          <div class="box"></div>
-          <div class="box"></div>
-          <div class="box"></div>
-          <div class="box"></div>
-          <div class="box"></div>
-          <div class="box"></div>
-          <div class="box"></div>
-          <div class="box"></div>
-          <div class="box"></div>
-          <div class="box"></div>
-          <div class="box"></div>
-          <div class="box"></div>
-          <div class="box"></div>
-          <div class="box"></div>
-          <div class="box"></div>
-          <div class="box"></div>
-          <div class="box"></div>
-          <div class="box"></div>
-          <div class="box"></div>
-          <div class="box"></div>
-          <div class="box"></div>
-          <div class="box"></div>
-          <div class="box"></div>
-          <div class="box"></div>
-          <div class="box"></div>
-          <div class="box"></div>
-          <div class="box"></div>
-          <div class="box"></div>
-          <div class="box"></div>
-          <div class="box"></div>
-          <div class="box"></div>
-          <div class="box"></div>
-          <div class="box"></div>
-          <div class="box"></div>
-          <div class="box"></div>
-          <div class="box"></div>
-          <div class="box"></div>
-          <div class="box"></div>
-          <div class="box"></div>
-          <div class="box"></div>
-          <div class="box"></div>
-          <div class="box"></div>
-          <div class="box"></div>
-          <div class="box"></div>
-          <div class="box"></div>
-          <div class="box"></div>
-          <div class="box"></div>
-          <div class="box"></div>
-          <div class="box"></div>
-          <div class="box"></div>
-          <div class="box"></div>
-          <div class="box"></div>
-          <div class="box"></div>
-          <div class="box"></div>
-          <div class="box"></div>
-          <div class="box"></div>
-          <div class="box"></div>
-          <div class="box"></div>
-          <div class="box"></div>
-          <div class="box"></div>
-          <div class="box"></div>
-          <div class="box"></div>
-          <div class="box"></div>
-          <div class="box"></div>
-          <div class="box"></div>
-          <div class="box"></div>
-          <div class="box"></div>
-          <div class="box"></div>
-          <div class="box"></div>
-          <div class="box"></div>
-          <div class="box"></div>
-          <div class="box"></div>
-          <div class="box"></div>
-          <div class="box"></div>
-          <div class="box"></div>
-          <div class="box"></div>
-          <div class="box"></div>
-          <div class="box"></div>
-          <div class="box"></div>
-          <div class="box"></div>
-          <div class="box"></div>
-          <div class="box"></div>
-          <div class="box"></div>
-          <div class="box"></div>
-          <div class="box"></div>
-          <div class="box"></div>
-          <div class="box"></div>
-          <div class="box"></div>
-          <div class="box"></div>
-          <div class="box"></div>
-          <div class="box"></div>
-          <div class="box"></div>
-          <div class="box"></div>
-          <div class="box"></div>
-          <div class="box"></div>
-          <div class="box"></div>
-          <div class="box"></div>
-          <div class="box"></div>
-          <div class="box"></div>
-          <div class="box"></div>
-          <div class="box"></div>
-          <div class="box"></div>
-          <div class="box"></div>
-          <div class="box"></div>
-          <div class="box"></div>
-          <div class="box"></div>
-          <div class="box"></div>
-          <div class="box"></div>
-          <div class="box"></div>
-          <div class="box"></div>
-          <div class="box"></div>
-          <div class="box"></div>
-          <div class="box"></div>
-          <div class="box"></div>
-          <div class="box"></div>
-          <div class="box"></div>
-          <div class="box"></div>
-          <div class="box"></div>
-          <div class="box"></div>
-          <div class="box"></div>
-          <div class="box"></div>
-          <div class="box"></div>
-          <div class="box"></div>
-          <div class="box"></div>
-          <div class="box"></div>
-          <div class="box"></div>
-          <div class="box"></div>
-          <div class="box"></div>
-          <div class="box"></div>
-          <div class="box"></div>
-          <div class="box"></div>
-          <div class="box"></div>
-          <div class="box"></div>
-          <div class="box"></div>
-          <div class="box"></div>
-          <div class="box"></div>
-          <div class="box"></div>
-          <div class="box"></div>
-          <div class="box"></div>
-          <div class="box"></div>
-          <div class="box"></div>
-          <div class="box"></div>
-          <div class="box"></div>
-          <div class="box"></div>
-          <div class="box"></div>
-          <div class="box"></div>
-          <div class="box"></div>
-          <div class="box"></div>
-          <div class="box"></div>
-          <div class="box"></div>
-          <div class="box"></div>
-          <div class="box"></div>
-          <div class="box"></div>
-          <div class="box"></div>
-          <div class="box"></div>
-          <div class="box"></div>
-          <div class="box"></div>
-          <div class="box"></div>
-          <div class="box"></div>
-          <div class="box"></div>
-          <div class="box"></div>
-          <div class="box"></div>
-          <div class="box"></div>
-          <div class="box"></div>
-          <div class="box"></div>
-          <div class="box"></div>
-          <div class="box"></div>
-          <div class="box"></div>
-          <div class="box"></div>
-          <div class="box"></div>
-          <div class="box"></div>
-          <div class="box"></div>
-          <div class="box"></div>
-          <div class="box"></div>
-          <div class="box"></div>
-          <div class="box"></div>
-          <div class="box"></div>
-          <div class="box"></div>
-          <div class="box"></div>
-          <div class="box"></div>
-          <div class="box"></div>
-          <div class="box"></div>
-          <div class="box"></div>
-          <div class="box"></div>
-          <div class="box"></div>
-          <div class="box"></div>
-          <div class="box"></div>
-          <div class="box"></div>
-          <div class="box"></div>
-          <div class="box"></div>
-          <div class="box"></div>
-          <div class="box"></div>
-          <div class="box"></div>
-          <div class="box"></div>
-          <div class="box"></div>
-          <div class="box"></div>
-          <div class="box"></div>
-          <div class="box"></div>
-          <div class="box"></div>
-          <div class="box"></div>
-          <div class="box"></div>
-          <div class="box"></div>
-          <div class="box"></div>
-          <div class="box"></div>
-          <div class="box"></div>
-          <div class="box"></div>
-          <div class="box"></div>
-          <div class="box"></div>
-          <div class="box"></div>
-          <div class="box"></div>
-          <div class="box"></div>
-          <div class="box"></div>
-          <div class="box"></div>
-          <div class="box"></div>
-          <div class="box"></div>
-          <div class="box"></div>
-          <div class="box"></div>
-          <div class="box"></div>
-          <div class="box"></div>
-          <div class="box"></div>
-          <div class="box"></div>
-          <div class="box"></div>
-          <div class="box"></div>
-          <div class="box"></div>
-          <div class="box"></div>
-          <div class="box"></div>
-          <div class="box"></div>
-          <div class="box"></div>
-          <div class="box"></div>
-          <div class="box"></div>
-          <div class="box"></div>
-          <div class="box"></div>
-          <div class="box"></div>
-          <div class="box"></div>
-          <div class="box"></div>
-          <div class="box"></div>
-          <div class="box"></div>
-          <div class="box"></div>
-          <div class="box"></div>
-          <div class="box"></div>
-          <div class="box"></div>
-          <div class="box"></div>
-          <div class="box"></div>
-          <div class="box"></div>
-          <div class="box"></div>
-          <div class="box"></div>
-          <div class="box"></div>
-          <div class="box"></div>
-          <div class="box"></div>
-          <div class="box"></div>
-          <div class="box"></div>
-          <div class="box"></div>
-          <div class="box"></div>
-          <div class="box"></div>
-          <div class="box"></div>
-          <div class="box"></div>
-          <div class="box"></div>
-          <div class="box"></div>
-    </div>
+        <!-- Render the grid items -->
+      <!-- Use JavaScript to dynamically generate the grid items -->
+      <script>
+          const container = document.querySelector('.boxes');
+          for (let i = 0; i < 360; i++) {
+              const div = document.createElement('div');
+              div.classList.add('grid-item');
+              container.appendChild(div);
+          }
+      </script>
+   </div>
 </body>
 </html>
