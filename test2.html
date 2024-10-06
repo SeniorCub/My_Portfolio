@@ -17,78 +17,275 @@
           display: flex;
           justify-content: center;
           align-items: center;
-          width: 100vw;
+     background: #1f1f1f;
+     width: 100vw;
           height: 100vh;
         }
         .boxes {
-            display: grid;
-            grid-template-columns: repeat(75, 15px); /* More columns for better precision */
-            grid-template-rows: repeat(7, 15px); /* More rows for better control */
-            gap: 2px;
-        }
-        .box {
-            border-radius: 5px;
-            background-color: var(--red);
-            opacity: 30%;
-            font-size: 10px;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            color: aliceblue;
-        }
+          display: grid;
+          grid-template-columns: repeat(75, 15px);
+          grid-template-rows: repeat(7, 15px);
+          gap: 2px;
+      }
+      .box {
+          border-radius: 5px;
+          background-color: var(--red);
+          opacity: 0.2;
+          font-size: 10px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          color: aliceblue;
+      }
+      /* Animation for the nth-child */
+      @keyframes fade-in-scale {
+          0% {
+              opacity: 0;
+              transform: scale(0.5);
+          }
+          100% {
+              opacity: 1;
+              transform: scale(1);
+          }
+      }
+
         /* D */
      .box:nth-child(2), .box:nth-child(78) ,.box:nth-child(154) ,.box:nth-child(230) ,.box:nth-child(304),.box:nth-child(378),.box:nth-child(452){
-          opacity: 100%;
+         opacity: 100%;
+          animation: fade-in-scale 0.7s ease-in-out forwards;
+          animation-delay: calc(0.1s * var(--i)); /* Custom delay */ 
      }
      /* E */
      .box:nth-child(7), .box:nth-child(82) ,.box:nth-child(157) ,.box:nth-child(232) ,.box:nth-child(307),.box:nth-child(382),.box:nth-child(457){
-          opacity: 100%;
+         opacity: 100%;
+          animation: fade-in-scale 0.7s ease-in-out forwards;
+          animation-delay: calc(0.1s * var(--i)); /* Custom delay */ 
      }
      .box:nth-child(8), .box:nth-child(9) ,.box:nth-child(10) ,.box:nth-child(11) {
-          opacity: 100%;
+         opacity: 100%;
+          animation: fade-in-scale 0.7s ease-in-out forwards;
+          animation-delay: calc(0.1s * var(--i)); /* Custom delay */ 
      }
      .box:nth-child(233), .box:nth-child(234) ,.box:nth-child(235) ,.box:nth-child(236) {
-          opacity: 100%;
+         opacity: 100%;
+          animation: fade-in-scale 0.7s ease-in-out forwards;
+          animation-delay: calc(0.1s * var(--i)); /* Custom delay */ 
      }
      .box:nth-child(458), .box:nth-child(459) ,.box:nth-child(460) ,.box:nth-child(461) {
-          opacity: 100%;
+         opacity: 100%;
+          animation: fade-in-scale 0.7s ease-in-out forwards;
+          animation-delay: calc(0.1s * var(--i)); /* Custom delay */ 
      }
      /* V */
      .box:nth-child(13), .box:nth-child(17), .box:nth-child(314), .box:nth-child(316), .box:nth-child(465){
-          opacity: 100%;
+         opacity: 100%;
+          animation: fade-in-scale 0.7s ease-in-out forwards;
+          animation-delay: calc(0.1s * var(--i)); /* Custom delay */ 
      }
      .box:nth-child(88), .box:nth-child(163), .box:nth-child(239), .box:nth-child(389){
-          opacity: 100%;
+         opacity: 100%;
+          animation: fade-in-scale 0.7s ease-in-out forwards;
+          animation-delay: calc(0.1s * var(--i)); /* Custom delay */ 
      }
      .box:nth-child(92), .box:nth-child(167), .box:nth-child(241), .box:nth-child(391){
-          opacity: 100%;
+         opacity: 100%;
+          animation: fade-in-scale 0.7s ease-in-out forwards;
+          animation-delay: calc(0.1s * var(--i)); /* Custom delay */ 
      }
      /* - */
      .box:nth-child(244), .box:nth-child(319), .box:nth-child(245), .box:nth-child(320){
-          opacity: 100%;
+         opacity: 100%;
+          animation: fade-in-scale 0.7s ease-in-out forwards;
+          animation-delay: calc(0.1s * var(--i)); /* Custom delay */ 
      }
      /* S */
      .box:nth-child(22), .box:nth-child(23), .box:nth-child(24), .box:nth-child(25), .box:nth-child(26){
-          opacity: 100%;
+         opacity: 100%;
+          animation: fade-in-scale 0.7s ease-in-out forwards;
+          animation-delay: calc(0.1s * var(--i)); /* Custom delay */ 
+     }
+     .box:nth-child(97), .box:nth-child(172), .box:nth-child(326), .box:nth-child(401){
+         opacity: 100%;
+          animation: fade-in-scale 0.7s ease-in-out forwards;
+          animation-delay: calc(0.1s * var(--i)); /* Custom delay */ 
+     }
+     .box:nth-child(247), .box:nth-child(248), .box:nth-child(249), .box:nth-child(250), .box:nth-child(251){
+         opacity: 100%;
+          animation: fade-in-scale 0.7s ease-in-out forwards;
+          animation-delay: calc(0.1s * var(--i)); /* Custom delay */ 
      }
      .box:nth-child(472), .box:nth-child(473), .box:nth-child(474), .box:nth-child(475), .box:nth-child(476){
-          opacity: 100%;
+         opacity: 100%;
+          animation: fade-in-scale 0.7s ease-in-out forwards;
+          animation-delay: calc(0.1s * var(--i)); /* Custom delay */ 
      }
-    </style>
-</head>
-<body>
-    <div class="boxes">
-        <!-- Render the grid items -->
-      <!-- Use JavaScript to dynamically generate the grid items -->
-      <script>
-          const container = document.querySelector('.boxes');
-          for (let i = 0; i < 525; i++) {
-              const div = document.createElement('div');
-              div.classList.add('box');
-              div.innerText = i;
-              container.appendChild(div);
-          }
-      </script>
-   </div>
-</body>
-</html>
+     /* E */
+     .box:nth-child(28), .box:nth-child(103) ,.box:nth-child(178) ,.box:nth-child(253) ,.box:nth-child(328),.box:nth-child(403),.box:nth-child(478){
+         opacity: 100%;
+          animation: fade-in-scale 0.7s ease-in-out forwards;
+          animation-delay: calc(0.1s * var(--i)); /* Custom delay */ 
+     }
+     .box:nth-child(29), .box:nth-child(30) ,.box:nth-child(31) ,.box:nth-child(32) {
+         opacity: 100%;
+          animation: fade-in-scale 0.7s ease-in-out forwards;
+          animation-delay: calc(0.1s * var(--i)); /* Custom delay */ 
+     }
+     .box:nth-child(254), .box:nth-child(255) ,.box:nth-child(256) ,.box:nth-child(257) {
+         opacity: 100%;
+          animation: fade-in-scale 0.7s ease-in-out forwards;
+          animation-delay: calc(0.1s * var(--i)); /* Custom delay */ 
+     }
+     .box:nth-child(479), .box:nth-child(480) ,.box:nth-child(481) ,.box:nth-child(482) {
+         opacity: 100%;
+          animation: fade-in-scale 0.7s ease-in-out forwards;
+          animation-delay: calc(0.1s * var(--i)); /* Custom delay */ 
+     }
+     /* N */
+     .box:nth-child(34), .box:nth-child(109) ,.box:nth-child(184) ,.box:nth-child(259) ,.box:nth-child(334),.box:nth-child(409),.box:nth-child(484){
+         opacity: 100%;
+          animation: fade-in-scale 0.7s ease-in-out forwards;
+          animation-delay: calc(0.1s * var(--i)); /* Custom delay */ 
+     }
+     .box:nth-child(38), .box:nth-child(113) ,.box:nth-child(188) ,.box:nth-child(263) ,.box:nth-child(338),.box:nth-child(413),.box:nth-child(488){
+         opacity: 100%;
+          animation: fade-in-scale 0.7s ease-in-out forwards;
+          animation-delay: calc(0.1s * var(--i)); /* Custom delay */ 
+     }
+     .box:nth-child(261), .box:nth-child(412) ,.box:nth-child(110) ,.box:nth-child(185) ,.box:nth-child(337){
+         opacity: 100%;
+          animation: fade-in-scale 0.7s ease-in-out forwards;
+          animation-delay: calc(0.1s * var(--i)); /* Custom delay */ 
+     }
+     /* I */
+     .box:nth-child(40), .box:nth-child(41) ,.box:nth-child(43) ,.box:nth-child(44){
+         opacity: 100%;
+          animation: fade-in-scale 0.7s ease-in-out forwards;
+          animation-delay: calc(0.1s * var(--i)); /* Custom delay */ 
+     }
+     .box:nth-child(490), .box:nth-child(491) ,.box:nth-child(493) ,.box:nth-child(494){
+         opacity: 100%;
+          animation: fade-in-scale 0.7s ease-in-out forwards;
+          animation-delay: calc(0.1s * var(--i)); /* Custom delay */ 
+     }
+     .box:nth-child(42), .box:nth-child(117) ,.box:nth-child(192) ,.box:nth-child(267) ,.box:nth-child(342),.box:nth-child(417),.box:nth-child(492){
+         opacity: 100%;
+          animation: fade-in-scale 0.7s ease-in-out forwards;
+          animation-delay: calc(0.1s * var(--i)); /* Custom delay */ 
+     }
+     /* O */
+     .box:nth-child(47), .box:nth-child(48) ,.box:nth-child(49){
+         opacity: 100%;
+          animation: fade-in-scale 0.7s ease-in-out forwards;
+          animation-delay: calc(0.1s * var(--i)); /* Custom delay */ 
+     }
+     .box:nth-child(497), .box:nth-child(498) ,.box:nth-child(499){
+         opacity: 100%;
+          animation: fade-in-scale 0.7s ease-in-out forwards;
+          animation-delay: calc(0.1s * var(--i)); /* Custom delay */ 
+     }
+     .box:nth-child(121), .box:nth-child(196) ,.box:nth-child(271) ,.box:nth-child(346) ,.box:nth-child(421){
+         opacity: 100%;
+          animation: fade-in-scale 0.7s ease-in-out forwards;
+          animation-delay: calc(0.1s * var(--i)); /* Custom delay */ 
+     }
+     .box:nth-child(125), .box:nth-child(200) ,.box:nth-child(275) ,.box:nth-child(350) ,.box:nth-child(425){
+         opacity: 100%;
+          animation: fade-in-scale 0.7s ease-in-out forwards;
+          animation-delay: calc(0.1s * var(--i)); /* Custom delay */ 
+     }
+     /* R */
+     .box:nth-child(52), .box:nth-child(127) ,.box:nth-child(202) ,.box:nth-child(277) ,.box:nth-child(352),.box:nth-child(427),.box:nth-child(502){
+         opacity: 100%;
+          animation: fade-in-scale 0.7s ease-in-out forwards;
+          animation-delay: calc(0.1s * var(--i)); /* Custom delay */ 
+     }
+     .box:nth-child(53), .box:nth-child(278) ,.box:nth-child(354),.box:nth-child(430),.box:nth-child(506){
+         opacity: 100%;
+          animation: fade-in-scale 0.7s ease-in-out forwards;
+          animation-delay: calc(0.1s * var(--i)); /* Custom delay */ 
+     }
+     .box:nth-child(131), .box:nth-child(206) ,.box:nth-child(280),.box:nth-child(55),.box:nth-child(54),.box:nth-child(279){
+         opacity: 100%;
+          animation: fade-in-scale 0.7s ease-in-out forwards;
+          animation-delay: calc(0.1s * var(--i)); /* Custom delay */ 
+     }
+     /* C */
+     .box:nth-child(59), .box:nth-child(60) ,.box:nth-child(61) ,.box:nth-child(62){
+         opacity: 100%;
+          animation: fade-in-scale 0.7s ease-in-out forwards;
+          animation-delay: calc(0.1s * var(--i)); /* Custom delay */ 
+     }
+     .box:nth-child(509), .box:nth-child(510) ,.box:nth-child(511) ,.box:nth-child(512){
+         opacity: 100%;
+          animation: fade-in-scale 0.7s ease-in-out forwards;
+          animation-delay: calc(0.1s * var(--i)); /* Custom delay */ 
+     }
+     .box:nth-child(133), .box:nth-child(208) ,.box:nth-child(283) ,.box:nth-child(358) ,.box:nth-child(433){
+         opacity: 100%;
+          animation: fade-in-scale 0.7s ease-in-out forwards;
+          animation-delay: calc(0.1s * var(--i)); /* Custom delay */ 
+     }
+     /* u */
+     .box:nth-child(517), .box:nth-child(515) ,.box:nth-child(516){
+         opacity: 100%;
+          animation: fade-in-scale 0.7s ease-in-out forwards;
+          animation-delay: calc(0.1s * var(--i)); /* Custom delay */ 
+     }
+     .box:nth-child(139), .box:nth-child(214) ,.box:nth-child(289) ,.box:nth-child(364) ,.box:nth-child(439) ,.box:nth-child(64){
+         opacity: 100%;
+          animation: fade-in-scale 0.7s ease-in-out forwards;
+          animation-delay: calc(0.1s * var(--i)); /* Custom delay */ 
+     }
+     .box:nth-child(143), .box:nth-child(218) ,.box:nth-child(293) ,.box:nth-child(368) ,.box:nth-child(443) ,.box:nth-child(68){
+         opacity: 100%;
+          animation: fade-in-scale 0.7s ease-in-out forwards;
+          animation-delay: calc(0.1s * var(--i)); /* Custom delay */ 
+     }
+      /* B */
+      .box:nth-child(145), .box:nth-child(220) ,.box:nth-child(295) ,.box:nth-child(370) ,.box:nth-child(445) ,.box:nth-child(70), .box:nth-child(520){
+         opacity: 100%;
+          animation: fade-in-scale 0.7s ease-in-out forwards;
+          animation-delay: calc(0.1s * var(--i)); /* Custom delay */ 
+     }
+      .box:nth-child(71), .box:nth-child(72) ,.box:nth-child(73) {
+         opacity: 100%;
+          animation: fade-in-scale 0.7s ease-in-out forwards;
+          animation-delay: calc(0.1s * var(--i)); /* Custom delay */ 
+     }
+      .box:nth-child(521), .box:nth-child(522) ,.box:nth-child(523) {
+         opacity: 100%;
+          animation: fade-in-scale 0.7s ease-in-out forwards;
+          animation-delay: calc(0.1s * var(--i)); /* Custom delay */ 
+     }
+      .box:nth-child(296), .box:nth-child(297) ,.box:nth-child(298) {
+         opacity: 100%;
+          animation: fade-in-scale 0.7s ease-in-out forwards;
+          animation-delay: calc(0.1s * var(--i)); /* Custom delay */ 
+     }
+      .box:nth-child(149), .box:nth-child(224) ,.box:nth-child(374) ,.box:nth-child(449) {
+         opacity: 100%;
+          animation: fade-in-scale 0.7s ease-in-out forwards;
+          animation-delay: calc(0.1s * var(--i)); /* Custom delay */ 
+     }
+     /* . */
+     .box:nth-child(526){
+         opacity: 100%;
+          animation: fade-in-scale 0.7s ease-in-out forwards;
+          animation-delay: calc(0.1s * var(--i)); /* Custom delay */ 
+     }
+</style>
+<body></body>
+         <div class="boxes">
+             <!-- Render the grid items -->
+             <script>
+                 const container = document.querySelector('.boxes');
+                 for (let i = 1; i < 526; i++) {
+                     const div = document.createElement('div');
+                     div.classList.add('box');
+                     div.style.setProperty('--i', i); // Setting the index for delay
+                     container.appendChild(div);
+                 }
+             </script>
+        </div>
+     </body>
+     </html>     
