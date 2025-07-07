@@ -1,17 +1,23 @@
 // JavaScript to handle typing effect
 const sentences = [
-     "Computer Science Student",
-     "Front End Developer",
-     "Back End Developer",
-     "Problem Solver",
-     "Competitive Programmer",
-     "Always learning new things"
-   ];
+  "Computer Science Student",
+  "Full Stack Web Developer",
+  "AI & Data App Enthusiast",
+  "Open Source Contributor",
+  "Mentor at BuggyBillions",
+  "Problem Solver & Innovator",
+  "Always Exploring New Technologies"
+];
+
 const sentencess = [
-     "Computer Science Student",
-     "Front End Developer",
-     "Back End Developer"
-   ];
+  "Computer Science Student",
+  "Full Stack Web Developer",
+  "ReactJs & Angular Js Developer",
+  "Node.js & Express Developer",
+  "PHP & Laravel Developer",
+  "Python & OpenCv Developer",
+];
+
  
    let sentenceIndex = 0;
    let textIndex = 0;
@@ -64,7 +70,7 @@ setInterval(updateTime, 1000);
 
 document.getElementById("downloadButton").addEventListener("click", function() {
      // Change 'path/to/your/pdf/file.pdf' to the actual path of your PDF file
-     var pdfUrl = 'MyResume.pdf';
+     var pdfUrl = '/portfolio/MyResume.pdf';
      
      // Create a link element
      var link = document.createElement('a');
@@ -73,7 +79,7 @@ document.getElementById("downloadButton").addEventListener("click", function() {
      link.href = pdfUrl;
      
      // Set the download attribute to force download the PDF file instead of opening it in a new tab
-     link.download = 'resume.pdf';
+     link.download = 'Reuben Farinde resume.pdf';
      
      // Append the link to the document body
      document.body.appendChild(link);
