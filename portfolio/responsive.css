@@ -1,161 +1,258 @@
 @media (max-width: 915px) {
-          body{
-               overflow-x: hidden!important;
-               height: auto;
-          }
-          .leftSide{
-               .profilInfo{
-                    font-size: 20px;
-               }
-               .hire{
-                    width: 85%;
-               }
-               .copyright{
-                    font-size: 12px;
-               }
-          }
-          .go-to-project-btn{
-               margin-right: auto;
-     }
-}
-@media (max-width: 853px) {
-     body{
-          overflow-x: hidden!important;
+     body {
+          overflow-x: hidden !important;
           height: auto;
      }
+
+     .leftSide {
+          .profilInfo {
+               font-size: 20px;
+          }
+
+          .hire {
+               width: 85%;
+          }
+
+          .copyright {
+               font-size: 12px;
+          }
+     }
+
+     .go-to-project-btn {
+          margin-right: auto;
+     }
+}
+
+@media (max-width: 853px) {
+     body {
+          overflow-x: hidden !important;
+          height: auto;
+     }
+
      .offcanvas.offcanvas-end {
           width: 70%;
      }
-     .leftSide{
+
+     .leftSide {
           position: initial;
           width: 100vw;
           top: 0;
           padding-top: 5vh;
           transform: none;
           height: 85vh;
-          .head{
+
+          .head {
                justify-content: space-between;
           }
      }
+
      .available-link-wrap {
-          width: 40vw!important;
+          width: 40vw !important;
      }
+
      .available-link {
-          padding: 10px!important;
+          padding: 10px !important;
      }
-     .time{
-          left: 0!important;
-          width: max-content!important;
+
+     .time {
+          left: 0 !important;
+          width: max-content !important;
      }
-     #navbar-example2{
-          display: none!important;
+
+     #navbar-example2 {
+          display: none !important;
      }
-     .btnMenu{
+
+     .btnMenu {
           position: fixed;
           top: 20%;
           right: 0;
      }
-     .btnMenu2{
+
+     .btnMenu2 {
           color: #fff;
           border: #fff 1px solid;
      }
-     .contents{
+
+     .contents {
           margin: 0;
           width: 100vw;
           overflow-x: hidden;
-          section{
-               padding:20px;
+
+          section {
+               padding: 20px;
           }
      }
-     .resume{
-          margin-top: 70px!important;
+
+     .resume {
+          margin-top: 70px !important;
      }
-     .introBody{
-          font-size: 50px!important;
+
+     .introBody {
+          font-size: 50px !important;
      }
+
      .introCatch {
-          width: 100%!important;
-      }
-     #typing-text{
-          height: 30vh!important;
-          font-size: 50px!important;
+          width: 100% !important;
      }
+
+     #typing-text {
+          height: 30vh !important;
+          font-size: 50px !important;
+     }
+
      .yearss {
           gap: 0;
           justify-content: space-around;
      }
-     .aboutMe{
+
+     .aboutMe {
           padding: 0 20px;
-          .about-image, .about-bg {
-               width: 90%!important;
+
+          .about-image,
+          .about-bg {
+               width: 90% !important;
                height: 30vh;
           }
+
           .about-bg {
                border-radius: 2% 10%;
           }
-          .aboutHead{
+
+          .aboutHead {
                margin-top: 10vh;
           }
-          .ms-5{
-               margin: 0!important;
+
+          .ms-5 {
+               margin: 0 !important;
           }
-          .StoryInfo{
-               .sec{
+
+          .StoryInfo {
+               .sec {
                     gap: 20px;
                }
-               .info1{
-                    flex-direction: row!important;
+
+               .info1 {
+                    flex-direction: row !important;
                }
           }
      }
-     .resume-lines__item, .service-item{
+
+     .resume-lines__item,
+     .service-item {
           width: 85vw;
      }
-     .skills{
+
+     .skills {
           display: grid;
-          grid-template-columns: repeat(2,1fr)!important;
-          .skill-inner{
-               i{
-                    font-size: 60px!important;
+          grid-template-columns: repeat(2, 1fr) !important;
+
+          .skill-inner {
+               i {
+                    font-size: 60px !important;
                }
           }
      }
-     .time{
-          left: 0!important;
-      
+
+     .time {
+          left: 0 !important;
+
      }
+
      swiper-container {
           width: 80%;
      }
-     #footer{
+
+     #footer {
           padding: 20px;
      }
-     .foot{
+
+     .foot {
           flex-direction: column;
           align-items: center;
      }
-     .resume-timeline{
+
+     .resume-timeline {
           padding: 0 20px;
-          margin-left: auto!important;
+          margin-left: auto !important;
      }
-     .col-md-3{
-          width: 80%!important;
+
+     .col-md-3 {
+          width: 80% !important;
      }
-     #footer{
-          ul{
+
+     #footer {
+          ul {
                flex-direction: column;
                gap: 20px;
           }
-          .socialls{
+
+          .socialls {
                gap: 5px;
           }
      }
+
+     /* Portfolio responsive styles */
+     .portfolio-grid {
+          grid-template-columns: 1fr !important;
+          gap: 15px !important;
+          margin-top: 20px !important;
+     }
+
+     .portfolio-image {
+          height: 200px !important;
+     }
+
+     .portfolio-image iframe {
+          height: 200px !important;
+          width: 100% !important;
+     }
+
+     .portfolio-content {
+          padding: 15px !important;
+     }
+
+     .filter-tabs-container {
+          flex-direction: column !important;
+          gap: 8px !important;
+          padding: 10px !important;
+     }
+
+     .filter-tab {
+          width: 100% !important;
+          justify-content: center !important;
+          padding: 12px 15px !important;
+     }
 }
+
 @media (max-width: 500px) {
      .about-image-wrap {
-          height: 20vh!important;
+          height: 20vh !important;
      }
+
      swiper-slide {
-          height: 40vh!important;
+          height: 40vh !important;
+     }
+
+     /* Ultra-mobile portfolio adjustments */
+     .portfolio-image {
+          height: 180px !important;
+     }
+
+     .portfolio-image iframe {
+          height: 180px !important;
+     }
+
+     .portfolio-content h3 {
+          font-size: 16px !important;
+     }
+
+     .portfolio-content p {
+          font-size: 12px !important;
+     }
+
+     .tech-tag {
+          font-size: 10px !important;
+          padding: 2px 6px !important;
      }
 }
